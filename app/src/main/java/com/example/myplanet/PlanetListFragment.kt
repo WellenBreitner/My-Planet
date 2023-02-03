@@ -7,7 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
+import me.relex.circleindicator.CircleIndicator2
 
 class PlanetListFragment : Fragment() {
 
@@ -36,6 +38,11 @@ class PlanetListFragment : Fragment() {
         val adapter = GridAdapter(listData)
         recyclerView.adapter = adapter
 
+        val pagerSnapHelper = PagerSnapHelper()
+        pagerSnapHelper.attachToRecyclerView(recyclerView)
+
+        val indicator = view?.findViewById<CircleIndicator2>(R.id.circle_indicator)
+        indicator?.attachToRecyclerView(recyclerView,pagerSnapHelper)
     }
 
     @SuppressLint("Recycle")

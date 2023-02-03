@@ -3,7 +3,7 @@
     <string name="get_started">GET STARTED</string>
     <string name="click_the_below_button_for_continue">Click the below button for continue</string>
     <string name="are_you_ready_for_exploration">Are you ready for exploration?</string>
-    <string name="my_planet_app">My Planet App</string>
+    <string name="my_planet_app">My Planet</string>
     <string name="image">image</string>
 
     <integer-array name="Data_Photo_Planet">

@@ -21,4 +21,12 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
+    <me.relex.circleindicator.CircleIndicator2
+        android:id="@+id/circle_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:ci_animator="@animator/scale_with_alpha"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerView"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
