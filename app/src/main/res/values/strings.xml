@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">MyPlanet</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="click_the_below_button_for_continue">Click the below button for continue</string>
+    <string name="are_you_ready_for_exploration">Are you ready for exploration?</string>
+    <string name="my_planet_app">My Planet App</string>
+    <string name="image">image</string>
+
+    <integer-array name="Data_Photo_Planet">
+        <item>@drawable/sun</item>
+        <item>@drawable/mercury</item>
+        <item>@drawable/venus</item>
+        <item>@drawable/earth</item>
+        <item>@drawable/mars</item>
+        <item>@drawable/jupiter</item>
+        <item>@drawable/saturn</item>
+        <item>@drawable/uranus</item>
+        <item>@drawable/neptune</item>
+    </integer-array>
+
+    <string-array name="Data_Name_Planet">
+        <item>Sun</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+
+    </string-array>
+    
+</resources>
