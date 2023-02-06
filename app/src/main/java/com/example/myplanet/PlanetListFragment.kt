@@ -50,7 +50,6 @@ class PlanetListFragment : Fragment() {
         val getName = resources.getStringArray(R.array.Data_Name_Planet)
         val getPhoto = resources.obtainTypedArray(R.array.Data_Photo_Planet)
 
-
         val list = ArrayList<Dataplanet>()
         for (i in getName.indices){
             val planet = Dataplanet(getName[i],getPhoto.getResourceId(i,-1))
