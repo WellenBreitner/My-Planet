@@ -10,7 +10,6 @@
     android:layout_gravity="bottom"
     app:cardBackgroundColor="@color/purple_200"
     app:cardCornerRadius="30dp"
-    app:cardElevation="30dp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent">
