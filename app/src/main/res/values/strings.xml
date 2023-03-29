@@ -5,9 +5,13 @@
     <string name="are_you_ready_for_exploration">Are you ready for exploration?</string>
     <string name="my_planet_app">My Planet</string>
     <string name="image">image</string>
+    <string name="gridview">GridView</string>
+    <string name="hello_welcome_back">Hello, Welcome Back</string>
+    <string name="listview">ListView</string>
+    <string name="gridHorizontal">GridHorizontal</string>
+    <string name="gridVertical">gridVertical</string>
 
     <integer-array name="Data_Photo_Planet">
-        <item>@drawable/sun</item>
         <item>@drawable/mercury</item>
         <item>@drawable/venus</item>
         <item>@drawable/earth</item>
@@ -19,7 +23,6 @@
     </integer-array>
 
     <string-array name="Data_Name_Planet">
-        <item>Sun</item>
         <item>Mercury</item>
         <item>Venus</item>
         <item>Earth</item>

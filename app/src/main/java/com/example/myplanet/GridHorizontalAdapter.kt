@@ -9,17 +9,17 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
-class GridAdapter(
+class GridHorizontalAdapter(
     private val listPlanet : ArrayList<Dataplanet>
-    ): RecyclerView.Adapter<GridAdapter.GridViewHolder>() {
+    ): RecyclerView.Adapter<GridHorizontalAdapter.GridViewHolder>() {
     class GridViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val textName = itemView.findViewById<TextView>(R.id.nameOfPlanet)
-        val image = itemView.findViewById<ImageView>(R.id.imageOfPlanet)
-        val cardview = itemView.findViewById<CardView>(R.id.cardView)
+        val textName: TextView = itemView.findViewById(R.id.gridHorizontalNameOfPlanet)
+        val image: ImageView = itemView.findViewById(R.id.gridHorizontalImageOfPlanet)
+        val cardView: CardView = itemView.findViewById(R.id.gridHorizontalCardView)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GridViewHolder {
-        return GridViewHolder (LayoutInflater.from(parent.context).inflate(R.layout.item,parent,false))
+        return GridViewHolder (LayoutInflater.from(parent.context).inflate(R.layout.gridhorizontalitem,parent,false))
     }
 
     override fun onBindViewHolder(holder: GridViewHolder, position: Int) {
@@ -27,7 +27,7 @@ class GridAdapter(
         holder.textName.text = bindData.namePlanet
         holder.image.setImageResource(bindData.photoPlanet)
 
-        holder.cardview.startAnimation(
+        holder.cardView.startAnimation(
             AnimationUtils.loadAnimation(
             holder.itemView.context,
             androidx.appcompat.R.anim.abc_slide_in_bottom))

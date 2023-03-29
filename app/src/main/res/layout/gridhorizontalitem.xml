@@ -2,35 +2,32 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/cardView"
+    android:id="@+id/gridHorizontalCardView"
     android:layout_width="200dp"
     android:layout_height="250dp"
-    android:layout_marginBottom="45dp"
-    android:layout_marginStart="30dp"
     android:layout_gravity="bottom"
+    android:layout_marginEnd="35dp"
+    android:layout_marginBottom="10dp"
     app:cardBackgroundColor="@color/purple_200"
-    app:cardCornerRadius="30dp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent">
+    app:cardCornerRadius="30dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageOfPlanet"
+            android:id="@+id/gridHorizontalImageOfPlanet"
             android:layout_width="200dp"
             android:layout_height="190dp"
             android:layout_marginStart="45dp"
             android:layout_marginBottom="90dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:src="@drawable/sun"
+            tools:src="@drawable/mercury"
             android:contentDescription="@string/image" />
 
         <TextView
-            android:id="@+id/nameOfPlanet"
+            android:id="@+id/gridHorizontalNameOfPlanet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -40,8 +37,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageOfPlanet"
-            tools:text="SUN" />
+            app:layout_constraintTop_toBottomOf="@+id/gridHorizontalImageOfPlanet"
+            tools:text="mercury" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
+
