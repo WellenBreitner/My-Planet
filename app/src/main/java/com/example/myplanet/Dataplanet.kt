@@ -5,6 +5,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Dataplanet(
-    var namePlanet : String,
-    var photoPlanet : Int
-):Parcelable
+    var namePlanet: String,
+    var photoPlanet: Int,
+    var descriptionPlanet: String
+) : Parcelable

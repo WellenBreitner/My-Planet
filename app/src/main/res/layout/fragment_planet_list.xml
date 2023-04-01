@@ -12,8 +12,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
         android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
@@ -24,8 +24,8 @@
             android:id="@+id/textView"
             android:layout_width="240dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:layout_marginTop="10dp"
+            android:layout_weight="1"
             android:gravity="center_horizontal"
             android:text="@string/hello_welcome_back"
             android:textColor="@color/black"
@@ -37,8 +37,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="?android:selectableItemBackground"
-            android:src="@drawable/grid_3x2_gap"
-            android:contentDescription="@string/gridHorizontal" />
+            android:contentDescription="@string/gridHorizontal"
+            android:src="@drawable/grid_3x2_gap" />
 
         <ImageButton
             android:id="@+id/gridVertical"
@@ -46,8 +46,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="?android:selectableItemBackground"
-            android:src="@drawable/grid"
-            android:contentDescription="@string/gridVertical" />
+            android:contentDescription="@string/gridVertical"
+            android:src="@drawable/grid" />
 
         <ImageButton
             android:id="@+id/listView"
@@ -55,8 +55,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="?android:selectableItemBackground"
-            android:src="@drawable/list"
-            android:contentDescription="@string/listview" />
+            android:contentDescription="@string/listview"
+            android:src="@drawable/list" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

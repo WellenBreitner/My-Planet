@@ -17,9 +17,9 @@ class PlanetListFragment : Fragment() {
 
     private val listData = ArrayList<Dataplanet>()
     private lateinit var recyclerView: RecyclerView
-    private lateinit var listView : ImageButton
-    private lateinit var gridHorizontal : ImageButton
-    private lateinit var gridVertical : ImageButton
+    private lateinit var listView: ImageButton
+    private lateinit var gridHorizontal: ImageButton
+    private lateinit var gridVertical: ImageButton
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -56,7 +56,8 @@ class PlanetListFragment : Fragment() {
     }
 
     private fun showGridHorizontalView() {
-        recyclerView.layoutManager = GridLayoutManager(requireContext(),1,RecyclerView.HORIZONTAL,false)
+        recyclerView.layoutManager =
+            GridLayoutManager(requireContext(), 1, RecyclerView.HORIZONTAL, false)
         val adapter = GridHorizontalAdapter(listData)
         recyclerView.adapter = adapter
 
@@ -70,27 +71,29 @@ class PlanetListFragment : Fragment() {
     }
 
     private fun showGridVerticalView() {
-        recyclerView.layoutManager = GridLayoutManager(requireContext(),2,RecyclerView.VERTICAL,false)
+        recyclerView.layoutManager =
+            GridLayoutManager(requireContext(), 2, RecyclerView.VERTICAL, false)
         val adapter = GridVerticalAdapter(listData)
         recyclerView.adapter = adapter
     }
 
-    private fun circleIndicator(){
+    private fun circleIndicator() {
         val pagerSnapHelper = PagerSnapHelper()
         pagerSnapHelper.attachToRecyclerView(recyclerView)
 
         val indicator = view?.findViewById<CircleIndicator2>(R.id.circle_indicator)
-        indicator?.attachToRecyclerView(recyclerView,pagerSnapHelper)
+        indicator?.attachToRecyclerView(recyclerView, pagerSnapHelper)
     }
 
     @SuppressLint("Recycle")
     private fun getDataPlanet(): ArrayList<Dataplanet> {
         val getName = resources.getStringArray(R.array.Data_Name_Planet)
         val getPhoto = resources.obtainTypedArray(R.array.Data_Photo_Planet)
+        val getDescription = resources.getStringArray(R.array.Data_Desc_Planet)
 
         val list = ArrayList<Dataplanet>()
-        for (i in getName.indices){
-            val planet = Dataplanet(getName[i],getPhoto.getResourceId(i,-1))
+        for (i in getName.indices) {
+            val planet = Dataplanet(getName[i], getPhoto.getResourceId(i, -1), getDescription[i])
             list.add(planet)
         }
         return list

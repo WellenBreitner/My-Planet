@@ -20,9 +20,12 @@ class SplashScreen : AppCompatActivity() {
         textSplashScreen.alpha = 0f
 
         splashscreen.animate().setDuration(5000).alpha(1f).withEndAction {
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            overridePendingTransition(com.airbnb.lottie.R.anim.abc_fade_in, com.airbnb.lottie.R.anim.abc_fade_out)
+            overridePendingTransition(
+                com.airbnb.lottie.R.anim.abc_fade_in,
+                com.airbnb.lottie.R.anim.abc_fade_out
+            )
             finish()
         }
 

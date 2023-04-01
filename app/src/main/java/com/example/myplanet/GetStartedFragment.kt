@@ -25,9 +25,15 @@ class GetStartedFragment : Fragment() {
         val mFragment = PlanetListFragment()
         btn.setOnClickListener {
             parentFragmentManager.beginTransaction().apply {
-                setCustomAnimations(com.google.android.material.R.anim.abc_fade_in,
-                    com.google.android.material.R.anim.abc_fade_out)
-                replace(R.id.fragment_Container,mFragment,PlanetListFragment::class.java.simpleName)
+                setCustomAnimations(
+                    com.google.android.material.R.anim.abc_fade_in,
+                    com.google.android.material.R.anim.abc_fade_out
+                )
+                replace(
+                    R.id.fragment_Container,
+                    mFragment,
+                    PlanetListFragment::class.java.simpleName
+                )
                 addToBackStack(null)
                 commit()
             }

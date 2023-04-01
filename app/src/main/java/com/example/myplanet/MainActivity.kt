@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
 
         val mFragment = GetStartedFragment()
         supportFragmentManager.beginTransaction().apply {
-            replace(R.id.fragment_Container, mFragment,GetStartedFragment::class.java.simpleName)
+            replace(R.id.fragment_Container, mFragment, GetStartedFragment::class.java.simpleName)
             commit()
         }
     }
