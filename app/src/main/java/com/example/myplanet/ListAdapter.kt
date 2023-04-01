@@ -14,6 +14,7 @@ class ListAdapter(private val listPlanet: ArrayList<Dataplanet>) :
     RecyclerView.Adapter<ListAdapter.ListViewHolder>() {
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val textView: TextView = itemView.findViewById(R.id.listNameOfPlanet)
+        val textView2: TextView = itemView.findViewById(R.id.listDescOfPlanet)
         val imageView: ImageView = itemView.findViewById(R.id.listImageOfPlanet)
         val cardView: CardView = itemView.findViewById(R.id.listCardView)
     }
@@ -30,6 +31,7 @@ class ListAdapter(private val listPlanet: ArrayList<Dataplanet>) :
         val bindData = listPlanet[position]
         holder.imageView.setImageResource(bindData.photoPlanet)
         holder.textView.text = bindData.namePlanet
+        holder.textView2.text = bindData.descriptionPlanet
 
         holder.cardView.startAnimation(
             AnimationUtils.loadAnimation(
