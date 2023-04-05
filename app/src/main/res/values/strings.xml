@@ -13,6 +13,8 @@
     <string name="my_nplanet">My\nPlanet</string>
     <string name="star">star</string>
     <string name="rocket">rocket</string>
+    <string name="frank_borman">Frank Borman</string>
+    <string name="desc">desc</string>
 
     <integer-array name="Data_Photo_Planet">
         <item>@drawable/mercury</item>
