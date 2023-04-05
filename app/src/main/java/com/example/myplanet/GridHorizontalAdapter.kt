@@ -16,12 +16,13 @@ class GridHorizontalAdapter(
     class GridViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val textName: TextView = itemView.findViewById(R.id.gridHorizontalNameOfPlanet)
         val image: ImageView = itemView.findViewById(R.id.gridHorizontalImageOfPlanet)
-        val cardView: CardView = itemView.findViewById(R.id.gridHorizontalCardView)
+        val cardView: CardView = itemView.findViewById(R.id.gridPlanetHorizontalCardView)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GridViewHolder {
         return GridViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.gridhorizontalitem, parent, false)
+            LayoutInflater.from(parent.context)
+                .inflate(R.layout.gridplanethorizontalitem, parent, false)
         )
     }
 

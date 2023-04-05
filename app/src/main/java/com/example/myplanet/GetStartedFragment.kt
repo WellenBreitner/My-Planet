@@ -22,7 +22,7 @@ class GetStartedFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val btn = view.findViewById<Button>(R.id.button_get_started)
 
-        val mFragment = PlanetListFragment()
+        val mFragment = PlanetRecyclerView()
         btn.setOnClickListener {
             parentFragmentManager.beginTransaction().apply {
                 setCustomAnimations(
@@ -32,7 +32,7 @@ class GetStartedFragment : Fragment() {
                 replace(
                     R.id.fragment_Container,
                     mFragment,
-                    PlanetListFragment::class.java.simpleName
+                    PlanetRecyclerView::class.java.simpleName
                 )
                 addToBackStack(null)
                 commit()

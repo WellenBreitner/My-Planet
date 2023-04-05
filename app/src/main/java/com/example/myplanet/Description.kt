@@ -14,7 +14,7 @@ class Description : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.description)
+        setContentView(R.layout.descplanet)
 
         val photoPlanet = findViewById<ImageView>(R.id.descImagePlanet)
         val namePlanet = findViewById<TextView>(R.id.descNamePlanet)

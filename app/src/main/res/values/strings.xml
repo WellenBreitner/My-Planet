@@ -13,8 +13,6 @@
     <string name="my_nplanet">My\nPlanet</string>
     <string name="star">star</string>
     <string name="rocket">rocket</string>
-    <string name="frank_borman">Frank Borman</string>
-    <string name="desc">desc</string>
 
     <integer-array name="Data_Photo_Planet">
         <item>@drawable/mercury</item>
@@ -159,31 +157,82 @@
             \n5.Neptune is named after the Roman god of the sea.\n
         </item>
     </string-array>
-    
+
     <string-array name="Data_Name_Astronaut">
-        <item>Frank Borman - Apollo 8 (1968)</item>
-        <item>James Lovell - Apollo 8 (1968) and Apollo 13 (1970)</item>
-        <item>William Anders - Apollo 8 (1968)</item>
-        <item>Neil Armstrong - Apollo 11 (1969)</item>
-        <item>Edwin "Buzz" Aldrin - Apollo 11 (1969)</item>
-        <item>Michael Collins - Apollo 11 (1969)</item>
-        <item>Alan Shepard - Apollo 14 (1971)</item>
-        <item>Edgar Mitchell - Apollo 14 (1971)</item>
-        <item>Stuart Roosa - Apollo 14 (1971)</item>
-        <item>David Scott - Apollo 15 (1971)</item>
-        <item>James Irwin - Apollo 15 (1971)</item>
-        <item>Alfred Worden - Apollo 15 (1971)</item>
-        <item>John Young - Apollo 16 (1972)</item>
-        <item>Charles Duke - Apollo 16 (1972)</item>
-        <item>Eugene Cernan - Apollo 17 (1972)</item>
-        <item>Harrison Schmitt - Apollo 17 (1972)</item>
-        <item>Thomas Stafford - Apollo-Soyuz Test Project (1975)</item>
-        <item>Vance Brand - Apollo-Soyuz Test Project (1975)</item>
-        <item>Deke Slayton - Apollo-Soyuz Test Project (1975)</item>
-        <item>Paul Weitz - Skylab 2 (1973)</item>
-        <item>Alan Bean - Skylab 3 (1973)</item>
-        <item>Owen Garriott - Skylab 3 (1973)</item>
-        <item>Jack Lousma - Skylab 3 (1973) and STS-3 (1982)</item>
+        <item>Frank Borman
+            \n-Apollo 8 (1968)</item>
+        <item>James Lovell
+            \n-apollo 8 (1968)
+            \n-Apollo 13 (1970)</item>
+        <item>William Anders
+            \n-Apollo 8 (1968)</item>
+        <item>Neil Armstrong
+            \n-Apollo 11 (1969)</item>
+        <item>Edwin "Buzz" Aldrin
+            \n-Apollo 11 (1969)</item>
+        <item>Michael Collins
+            \n-Apollo 11 (1969)</item>
+        <item>Alan Shepard
+            \n-Apollo 14 (1971)</item>
+        <item>Edgar Mitchell
+            \n-Apollo 14 (1971)</item>
+        <item>Stuart Roosa
+            \n-Apollo 14 (1971)</item>
+        <item>David Scott
+            \n-Apollo 15 (1971)</item>
+        <item>James Irwin
+            \n-Apollo 15 (1971)</item>
+        <item>Alfred Worden
+            \n-Apollo 15 (1971)</item>
+        <item>John Young
+            \n-Apollo 16 (1972)</item>
+        <item>Charles Duke
+            \n-Apollo 16 (1972)</item>
+        <item>Eugene Cernan
+            \n-Apollo 17 (1972)</item>
+        <item>Harrison Schmitt
+            \n-Apollo 17 (1972)</item>
+        <item>Thomas Stafford
+            \n-Apollo Soyuz Test Project (1975)</item>
+        <item>Vance Brand
+            \n-Apollo Soyuz Test Project (1975)</item>
+        <item>Deke Slayton
+            \n-Apollo Soyuz Test Project (1975)</item>
+        <item>Paul Weitz
+            \n-Skylab 2 (1973)</item>
+        <item>Alan Bean
+            \n-Skylab 3 (1973)</item>
+        <item>Owen Garriott
+            \n-Skylab 3 (1973)</item>
+        <item>Jack Lousma
+            \n-Skylab 3 (1973)
+            \n-STS-3 (1982)</item>
     </string-array>
+
+    <integer-array name="Data_Photo_Astronaut">
+        <item>@drawable/frankborman</item>
+        <item>@drawable/jameslovell</item>
+        <item>@drawable/williamanders</item>
+        <item>@drawable/neilarmstrong</item>
+        <item>@drawable/edwinaldrin</item>
+        <item>@drawable/michaelcollins</item>
+        <item>@drawable/alanshepard</item>
+        <item>@drawable/edgarmitchell</item>
+        <item>@drawable/stuartroosa</item>
+        <item>@drawable/davidscott</item>
+        <item>@drawable/jamesirwin</item>
+        <item>@drawable/alfredworden</item>
+        <item>@drawable/johnyoung</item>
+        <item>@drawable/charlesduke</item>
+        <item>@drawable/eugenecernan</item>
+        <item>@drawable/harrisonschmitt</item>
+        <item>@drawable/thomasstafford</item>
+        <item>@drawable/vancebrand</item>
+        <item>@drawable/dekeslayton</item>
+        <item>@drawable/paulweitz</item>
+        <item>@drawable/alanbean</item>
+        <item>@drawable/owengarriott</item>
+        <item>@drawable/jacklousma</item>
+    </integer-array>
 
 </resources>

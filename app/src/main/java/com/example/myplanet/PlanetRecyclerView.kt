@@ -1,42 +1,47 @@
 package com.example.myplanet
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
+import com.airbnb.lottie.LottieAnimationView
 import me.relex.circleindicator.CircleIndicator2
 
-class PlanetListFragment : Fragment() {
+class PlanetRecyclerView : Fragment() {
 
     private val listData = ArrayList<DataPlanet>()
     private lateinit var recyclerView: RecyclerView
     private lateinit var listView: ImageButton
     private lateinit var gridHorizontal: ImageButton
     private lateinit var gridVertical: ImageButton
+    private lateinit var astronaut: LottieAnimationView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_planet_list, container, false)
+        return inflater.inflate(R.layout.fragment_planet_recycler_view, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        recyclerView = view.findViewById(R.id.recyclerView)
+        recyclerView = view.findViewById(R.id.planetRecyclerView)
         recyclerView.setHasFixedSize(true)
 
         listView = requireActivity().findViewById(R.id.listView)
         gridHorizontal = requireActivity().findViewById(R.id.gridHorizontal)
         gridVertical = requireActivity().findViewById(R.id.gridVertical)
+        astronaut = requireActivity().findViewById(R.id.astronaut)
 
         listData.addAll(getDataPlanet())
         showGridHorizontalView()
@@ -53,6 +58,15 @@ class PlanetListFragment : Fragment() {
         gridVertical.setOnClickListener {
             showGridVerticalView()
         }
+
+        astronaut.setOnClickListener {
+            showAstronotList()
+        }
+    }
+
+    private fun showAstronotList() {
+        val intent = Intent(requireContext(), AstronautRecyclerView::class.java)
+        startActivity(intent)
     }
 
     private fun showGridHorizontalView() {
@@ -65,7 +79,7 @@ class PlanetListFragment : Fragment() {
 
     private fun showListView() {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        val adapter = ListAdapter(listData)
+        val adapter = PlanetListAdapter(listData)
         recyclerView.adapter = adapter
 
     }
@@ -91,12 +105,12 @@ class PlanetListFragment : Fragment() {
         val getPhoto = resources.obtainTypedArray(R.array.Data_Photo_Planet)
         val getDescription = resources.getStringArray(R.array.Data_Desc_Planet)
 
-        val list = ArrayList<DataPlanet>()
+        val listPlanet = ArrayList<DataPlanet>()
         for (i in getName.indices) {
             val planet = DataPlanet(getName[i], getPhoto.getResourceId(i, -1), getDescription[i])
-            list.add(planet)
+            listPlanet.add(planet)
         }
-        return list
+        return listPlanet
     }
 
 

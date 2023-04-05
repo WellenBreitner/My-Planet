@@ -16,12 +16,13 @@ class GridVerticalAdapter(
     class GridViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val textName: TextView = itemView.findViewById(R.id.gridVerticalNameOfPlanet)
         val image: ImageView = itemView.findViewById(R.id.gridVerticalImageOfPlanet)
-        val cardView: CardView = itemView.findViewById(R.id.gridVerticalCardView)
+        val cardView: CardView = itemView.findViewById(R.id.gridPlanetVerticalCardView)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GridViewHolder {
         return GridViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.gridverticalitem, parent, false)
+            LayoutInflater.from(parent.context)
+                .inflate(R.layout.gridplanetverticalitem, parent, false)
         )
     }
 

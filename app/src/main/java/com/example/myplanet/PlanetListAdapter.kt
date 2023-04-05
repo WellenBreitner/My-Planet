@@ -10,23 +10,22 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
-class ListAdapter(private val listPlanet: ArrayList<DataPlanet>) :
-    RecyclerView.Adapter<ListAdapter.ListViewHolder>() {
+class PlanetListAdapter(private val listPlanet: ArrayList<DataPlanet>) :
+    RecyclerView.Adapter<PlanetListAdapter.ListViewHolder>() {
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val textView: TextView = itemView.findViewById(R.id.listNameOfPlanet)
         val textView2: TextView = itemView.findViewById(R.id.listDescOfPlanet)
         val imageView: ImageView = itemView.findViewById(R.id.listImageOfPlanet)
-        val cardView: CardView = itemView.findViewById(R.id.listCardView)
+        val cardView: CardView = itemView.findViewById(R.id.listPlanetCardView)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
         return ListViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.listitem, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.listplanet, parent, false)
         )
     }
 
     override fun getItemCount() = listPlanet.size
-
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val bindData = listPlanet[position]
         holder.imageView.setImageResource(bindData.photoPlanet)
