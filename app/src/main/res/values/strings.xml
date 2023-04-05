@@ -157,5 +157,31 @@
             \n5.Neptune is named after the Roman god of the sea.\n
         </item>
     </string-array>
+    
+    <string-array name="Data_Name_Astronaut">
+        <item>Frank Borman - Apollo 8 (1968)</item>
+        <item>James Lovell - Apollo 8 (1968) and Apollo 13 (1970)</item>
+        <item>William Anders - Apollo 8 (1968)</item>
+        <item>Neil Armstrong - Apollo 11 (1969)</item>
+        <item>Edwin "Buzz" Aldrin - Apollo 11 (1969)</item>
+        <item>Michael Collins - Apollo 11 (1969)</item>
+        <item>Alan Shepard - Apollo 14 (1971)</item>
+        <item>Edgar Mitchell - Apollo 14 (1971)</item>
+        <item>Stuart Roosa - Apollo 14 (1971)</item>
+        <item>David Scott - Apollo 15 (1971)</item>
+        <item>James Irwin - Apollo 15 (1971)</item>
+        <item>Alfred Worden - Apollo 15 (1971)</item>
+        <item>John Young - Apollo 16 (1972)</item>
+        <item>Charles Duke - Apollo 16 (1972)</item>
+        <item>Eugene Cernan - Apollo 17 (1972)</item>
+        <item>Harrison Schmitt - Apollo 17 (1972)</item>
+        <item>Thomas Stafford - Apollo-Soyuz Test Project (1975)</item>
+        <item>Vance Brand - Apollo-Soyuz Test Project (1975)</item>
+        <item>Deke Slayton - Apollo-Soyuz Test Project (1975)</item>
+        <item>Paul Weitz - Skylab 2 (1973)</item>
+        <item>Alan Bean - Skylab 3 (1973)</item>
+        <item>Owen Garriott - Skylab 3 (1973)</item>
+        <item>Jack Lousma - Skylab 3 (1973) and STS-3 (1982)</item>
+    </string-array>
 
 </resources>

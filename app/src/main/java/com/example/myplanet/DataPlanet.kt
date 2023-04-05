@@ -4,7 +4,7 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class Dataplanet(
+data class DataPlanet(
     var namePlanet: String,
     var photoPlanet: Int,
     var descriptionPlanet: String

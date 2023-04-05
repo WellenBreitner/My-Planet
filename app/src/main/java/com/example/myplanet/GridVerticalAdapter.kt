@@ -11,7 +11,7 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
 class GridVerticalAdapter(
-    private val listPlanet: ArrayList<Dataplanet>
+    private val listPlanet: ArrayList<DataPlanet>
 ) : RecyclerView.Adapter<GridVerticalAdapter.GridViewHolder>() {
     class GridViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val textName: TextView = itemView.findViewById(R.id.gridVerticalNameOfPlanet)

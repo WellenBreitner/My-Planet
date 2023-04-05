@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
-class ListAdapter(private val listPlanet: ArrayList<Dataplanet>) :
+class ListAdapter(private val listPlanet: ArrayList<DataPlanet>) :
     RecyclerView.Adapter<ListAdapter.ListViewHolder>() {
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val textView: TextView = itemView.findViewById(R.id.listNameOfPlanet)

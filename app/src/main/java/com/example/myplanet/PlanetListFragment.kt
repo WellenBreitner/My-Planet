@@ -15,7 +15,7 @@ import me.relex.circleindicator.CircleIndicator2
 
 class PlanetListFragment : Fragment() {
 
-    private val listData = ArrayList<Dataplanet>()
+    private val listData = ArrayList<DataPlanet>()
     private lateinit var recyclerView: RecyclerView
     private lateinit var listView: ImageButton
     private lateinit var gridHorizontal: ImageButton
@@ -86,14 +86,14 @@ class PlanetListFragment : Fragment() {
     }
 
     @SuppressLint("Recycle")
-    private fun getDataPlanet(): ArrayList<Dataplanet> {
+    private fun getDataPlanet(): ArrayList<DataPlanet> {
         val getName = resources.getStringArray(R.array.Data_Name_Planet)
         val getPhoto = resources.obtainTypedArray(R.array.Data_Photo_Planet)
         val getDescription = resources.getStringArray(R.array.Data_Desc_Planet)
 
-        val list = ArrayList<Dataplanet>()
+        val list = ArrayList<DataPlanet>()
         for (i in getName.indices) {
-            val planet = Dataplanet(getName[i], getPhoto.getResourceId(i, -1), getDescription[i])
+            val planet = DataPlanet(getName[i], getPhoto.getResourceId(i, -1), getDescription[i])
             list.add(planet)
         }
         return list
