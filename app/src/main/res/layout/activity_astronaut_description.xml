@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    tools:context=".AstronautDescription">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/astronautImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/jacklousma"
+            android:contentDescription="@string/astronaut" />
+
+        <TextView
+            android:id="@+id/astronautName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/astronautImage"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/astronautDescription"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/astronautName"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:textStyle="bold" />-->
+
+    </RelativeLayout>
+</ScrollView>
