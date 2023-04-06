@@ -39,10 +39,10 @@ class GridHorizontalAdapter(
         )
 
         holder.cardView.setOnClickListener {
-            val intent = Intent(holder.itemView.context, Description::class.java)
-            intent.putExtra(Description.NAME_PlANET, bindData.namePlanet)
-            intent.putExtra(Description.IMAGE_PLANET, bindData.photoPlanet)
-            intent.putExtra(Description.DESC_PLANET, bindData.descriptionPlanet)
+            val intent = Intent(holder.itemView.context, PlanetDescription::class.java)
+            intent.putExtra(PlanetDescription.NAME_PlANET, bindData.namePlanet)
+            intent.putExtra(PlanetDescription.IMAGE_PLANET, bindData.photoPlanet)
+            intent.putExtra(PlanetDescription.DESC_PLANET, bindData.descriptionPlanet)
             holder.itemView.context.startActivity(intent)
         }
     }

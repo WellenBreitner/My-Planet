@@ -1,5 +1,6 @@
 package com.example.myplanet
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,5 +32,12 @@ class AstronautListAdapter(
         holder.circleImage.setImageResource(bind.PhotoAstronaut)
         holder.name.text = bind.nameAstronaut
 //        holder.desc.text =
+
+        holder.cardView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, AstronautDescription::class.java)
+            intent.putExtra(AstronautDescription.NAME_ASTRONAUT, bind.nameAstronaut)
+            intent.putExtra(AstronautDescription.IMAGE_ASTRONAUT, bind.PhotoAstronaut)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 }

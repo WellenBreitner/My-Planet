@@ -13,10 +13,13 @@
         android:theme="@style/Theme.MyPlanet"
         tools:targetApi="31">
         <activity
+            android:name=".AstronautDescription"
+            android:exported="false" />
+        <activity
             android:name=".AstronautRecyclerView"
             android:exported="false" />
         <activity
-            android:name=".Description"
+            android:name=".PlanetDescription"
             android:exported="false" />
         <activity
             android:name=".SplashScreen"

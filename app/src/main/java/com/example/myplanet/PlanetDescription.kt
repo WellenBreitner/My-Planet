@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 
-class Description : AppCompatActivity() {
+class PlanetDescription : AppCompatActivity() {
     companion object {
         const val IMAGE_PLANET = "IMAGE_PLANET"
         const val NAME_PlANET = "NAME_PLANET"
@@ -14,9 +14,9 @@ class Description : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.descplanet)
+        setContentView(R.layout.activity_planet_description)
 
-        val photoPlanet = findViewById<ImageView>(R.id.descImagePlanet)
+        val imagePlanet = findViewById<ImageView>(R.id.descImagePlanet)
         val namePlanet = findViewById<TextView>(R.id.descNamePlanet)
         val descPlanet = findViewById<TextView>(R.id.descDescPlanet)
 
@@ -24,7 +24,7 @@ class Description : AppCompatActivity() {
         val getName = intent.getStringExtra(NAME_PlANET)
         val getDesc = intent.getStringExtra(DESC_PLANET)
 
-        photoPlanet.setImageResource(getImage)
+        imagePlanet.setImageResource(getImage)
         namePlanet.text = getName
         descPlanet.text = getDesc
     }
