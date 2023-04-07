@@ -37,7 +37,7 @@ class AstronautListAdapter(
             val intent = Intent(holder.itemView.context, AstronautDescription::class.java)
             intent.putExtra(AstronautDescription.NAME_ASTRONAUT, bind.nameAstronaut)
             intent.putExtra(AstronautDescription.IMAGE_ASTRONAUT, bind.PhotoAstronaut)
-            intent.putExtra(AstronautDescription.IMAGE_ASTRONAUT, bind.descAstronaut)
+            intent.putExtra(AstronautDescription.DESC_ASTRONAUT, bind.descAstronaut)
             holder.itemView.context.startActivity(intent)
         }
     }
