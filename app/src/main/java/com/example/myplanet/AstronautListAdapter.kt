@@ -16,7 +16,7 @@ class AstronautListAdapter(
         val cardView: CardView = itemView.findViewById(R.id.listAstronautCardView)
         val circleImage: CircleImageView = itemView.findViewById(R.id.astronautCircleImage)
         val name: TextView = itemView.findViewById(R.id.astronautName)
-//        val desc : TextView = itemView.findViewById(R.id.astronautDesc)
+        val desc: TextView = itemView.findViewById(R.id.astronautDesc)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AstronautListViewHodler {
@@ -31,12 +31,13 @@ class AstronautListAdapter(
         val bind = listAstronaut[position]
         holder.circleImage.setImageResource(bind.PhotoAstronaut)
         holder.name.text = bind.nameAstronaut
-//        holder.desc.text =
+        holder.desc.text = bind.descAstronaut
 
         holder.cardView.setOnClickListener {
             val intent = Intent(holder.itemView.context, AstronautDescription::class.java)
             intent.putExtra(AstronautDescription.NAME_ASTRONAUT, bind.nameAstronaut)
             intent.putExtra(AstronautDescription.IMAGE_ASTRONAUT, bind.PhotoAstronaut)
+            intent.putExtra(AstronautDescription.IMAGE_ASTRONAUT, bind.descAstronaut)
             holder.itemView.context.startActivity(intent)
         }
     }

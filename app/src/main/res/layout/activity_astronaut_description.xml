@@ -15,9 +15,9 @@
             android:id="@+id/astronautImage"
             android:layout_width="match_parent"
             android:layout_height="300dp"
+            android:contentDescription="@string/astronaut"
             android:scaleType="fitCenter"
-            tools:src="@drawable/jacklousma"
-            android:contentDescription="@string/astronaut" />
+            tools:src="@drawable/jacklousma" />
 
         <TextView
             android:id="@+id/astronautName"
@@ -28,14 +28,14 @@
             android:textSize="30sp"
             android:textStyle="bold" />
 
-        <!--        <TextView-->
-        <!--            android:id="@+id/astronautDescription"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_below="@id/astronautName"-->
-        <!--            android:textColor="@color/black"-->
-        <!--            android:textSize="20sp"-->
-        <!--            android:textStyle="bold" />-->
+        <TextView
+            android:id="@+id/astronautDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/astronautName"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 </ScrollView>

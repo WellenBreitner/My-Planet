@@ -31,11 +31,16 @@ class AstronautRecyclerView : AppCompatActivity() {
     private fun getDataAstronaut(): ArrayList<DataAstronaut> {
         val getPhotoAstronaut = resources.obtainTypedArray(R.array.Data_Photo_Astronaut)
         val getNameAstronaut = resources.getStringArray(R.array.Data_Name_Astronaut)
+        val getDescriptionAstronaut = resources.getStringArray(R.array.Data_Desc_Astronaut)
 
         val listAstronaut = ArrayList<DataAstronaut>()
         for (i in getNameAstronaut.indices) {
             val astronaut =
-                DataAstronaut(getPhotoAstronaut.getResourceId(i, -1), getNameAstronaut[i])
+                DataAstronaut(
+                    getPhotoAstronaut.getResourceId(i, -1),
+                    getNameAstronaut[i],
+                    getDescriptionAstronaut[i]
+                )
             listAstronaut.add(astronaut)
         }
         return listAstronaut
