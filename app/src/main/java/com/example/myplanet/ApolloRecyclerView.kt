@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ApolloRecyclerView : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
-    val listData = ArrayList<DataApollo>()
+    private val listData = ArrayList<DataApollo>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
