@@ -21,6 +21,7 @@
 
 
         <ImageView
+            android:id="@+id/rocketImage"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_alignBottom="@+id/starImage"

@@ -1,5 +1,6 @@
 package com.example.myplanet
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -19,6 +20,7 @@ class PlanetDescription : AppCompatActivity() {
         val imagePlanet = findViewById<ImageView>(R.id.descImagePlanet)
         val namePlanet = findViewById<TextView>(R.id.descNamePlanet)
         val descPlanet = findViewById<TextView>(R.id.descDescPlanet)
+        val rocket = findViewById<ImageView>(R.id.rocketImage)
 
         val getImage = intent.getIntExtra(IMAGE_PLANET, 0)
         val getName = intent.getStringExtra(NAME_PlANET)
@@ -27,5 +29,10 @@ class PlanetDescription : AppCompatActivity() {
         imagePlanet.setImageResource(getImage)
         namePlanet.text = getName
         descPlanet.text = getDesc
+
+        rocket.setOnClickListener {
+            val intent = Intent(this@PlanetDescription,ApolloRecyclerView::class.java)
+            startActivity(intent)
+        }
     }
 }

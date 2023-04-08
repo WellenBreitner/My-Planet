@@ -238,17 +238,17 @@
 
     <string-array name="Data_Desc_Astronaut">
         <item>
-            Frank Borman is a retired American astronaut and engineer who gained worldwide recognition as the commander of the historic Apollo 8 mission in 1968. Born in 1928, Borman had a distinguished career in the United States Air Force as a fighter pilot and test pilot before being selected as an astronaut by NASA. As the commander of Apollo 8, Borman and his crewmates became the first humans to orbit the Moon,witnessing the famous Earthrise and paving the way for the Apollo 11 Moon landing. After leaving NASA, Borman pursued a successful career in the business sector and has been recognized with numerous awards for his contributions to space exploration.
+            Frank Borman is a retired American astronaut and engineer who gained worldwide recognition as the commander of the historic Apollo 8 mission in 1968. Born in 1928, Borman had a distinguished career in the United States Air Force as a fighter pilot and test pilot before being selected as an astronaut by NASA. As the commander of Apollo 8, Borman and his crewmates became the first humans to orbit the Moon,witnessing the famous Earthrise and paving the way for the Apollo 11 Moon landing. After leaving NASA, Borman pursued a successful career in the business sector and has been recognized with numerous awards for his contributions to space exploration.\n
             \nIn addition to his achievements in space, Borman has been an advocate for environmental causes and has been involved in various philanthropic endeavors. He is widely regarded as a pioneering figure in space exploration and remains an important figure in American space history, known for his leadership and accomplishments in advancing humanity\'s reach beyond Earth.
         </item>
         <item>
-            James Lovell is a retired American astronaut and naval aviator who is best known for his role as the commander of the Apollo 13 mission, which became known as a "successful failure" due to the dramatic events that unfolded during the mission. Born on March 25, 1928, in Cleveland, Ohio, Lovell had a distinguished career as an astronaut and military officer.
-            \nLovell\'s early career was in the United States Navy, where he served as a test pilot and later as an astronaut. He was selected by NASA in 1962 as part of the second group of astronauts known as the "New Nine." Lovell went on to serve as the pilot of Gemini 7 in 1965 and the commander of Gemini 12 in 1966, before commanding the historic Apollo 13 mission in 1970. During Apollo 13, Lovell and his crewmates encountered a life-threatening oxygen tank explosion that crippled their spacecraft, but they successfully returned to Earth after enduring harrowing challenges and making critical decisions.
-            \nAfter his career as an astronaut, Lovell retired from the Navy and pursued various business ventures. He has been recognized with numerous awards for his contributions to space exploration, and is known for his resilience, leadership, and courage in the face of adversity during the Apollo 13 mission. Lovell\'s story has been celebrated in books, movies, and documentaries, and he remains a revered figure in American space history.
+            James Lovell is a retired American astronaut and naval aviator who is best known for his role as the commander of the Apollo 13 mission, which became known as a "successful failure" due to the dramatic events that unfolded during the mission. Born on March 25, 1928, in Cleveland, Ohio, Lovell had a distinguished career as an astronaut and military officer.\n
+            \nLovell\'s early career was in the United States Navy, where he served as a test pilot and later as an astronaut. He was selected by NASA in 1962 as part of the second group of astronauts known as the "New Nine." Lovell went on to serve as the pilot of Gemini 7 in 1965 and the commander of Gemini 12 in 1966, before commanding the historic Apollo 13 mission in 1970. During Apollo 13, Lovell and his crewmates encountered a life-threatening oxygen tank explosion that crippled their spacecraft, but they successfully returned to Earth after enduring harrowing challenges and making critical decisions.\n
+            \nAfter his career as an astronaut, Lovell retired from the Navy and pursued various business ventures. He has been recognized with numerous awards for his contributions to space exploration, and is known for his resilience, leadership, and courage in the face of adversity during the Apollo 13 mission. Lovell\'s story has been celebrated in books, movies, and documentaries, and he remains a revered figure in American space history.\n
         </item>
         <item>
-            William Anders is a former American astronaut, engineer, and businessman who is best known for his role as the lunar module pilot on the Apollo 8 mission, the first manned spacecraft to orbit the Moon. Born on October 17, 1933, in Hong Kong, Anders had a notable career as an astronaut and aerospace executive.
-            \nAnders began his career as an Air Force officer and later joined NASA, where he was selected as an astronaut in 1963 as part of the third group of astronauts known as the "Fourteen." He served as the lunar module pilot for Apollo 8 in 1968, during which he and his crewmates, Frank Borman and James Lovell, became the first humans to travel to the Moon and witness the famous Earthrise. Anders\' iconic photograph of the Earthrise, showing the Earth rising above the lunar horizon, became one of the most iconic images of space exploration.
+            William Anders is a former American astronaut, engineer, and businessman who is best known for his role as the lunar module pilot on the Apollo 8 mission, the first manned spacecraft to orbit the Moon. Born on October 17, 1933, in Hong Kong, Anders had a notable career as an astronaut and aerospace executive.\n
+            \nAnders began his career as an Air Force officer and later joined NASA, where he was selected as an astronaut in 1963 as part of the third group of astronauts known as the "Fourteen." He served as the lunar module pilot for Apollo 8 in 1968, during which he and his crewmates, Frank Borman and James Lovell, became the first humans to travel to the Moon and witness the famous Earthrise. Anders\' iconic photograph of the Earthrise, showing the Earth rising above the lunar horizon, became one of the most iconic images of space exploration.\n
             \nAfter his career as an astronaut, Anders held various executive roles in the aerospace industry and worked in the private sector. He has been recognized with numerous awards for his contributions to space exploration and remains an important figure in American space history. Anders\' legacy as an astronaut and his iconic photograph continue to inspire generations of space enthusiasts and highlight the beauty and fragility of our planet Earth.
         </item>
         <item>
@@ -359,8 +359,88 @@
             \nLousma\'s expertise as an engineer and astronaut was widely recognized, and he made significant contributions to the development of the Space Shuttle program and the advancement of space exploration technology. After retiring from NASA, Lousma continued his career as an engineer and later served as a Republican member of the Michigan State Senate.
             \nLousma\'s legacy as an astronaut, engineer, and public servant continues to inspire future generations of astronauts, engineers, and public servants, and his contributions to human spaceflight, engineering, and public service remain a notable part of space exploration and public service history.
         </item>
+    </string-array>
 
+    <string-array name="Data_Name_Apollo">
+        <item>Apollo 1 (AS-204)</item>
+        <item>Apollo 7 (AS-205)</item>
+        <item>Apollo 8 (AS-503)</item>
+        <item>Apollo 9 (AS-504)</item>
+        <item>Apollo 10 (AS-505)</item>
+        <item>Apollo 11 (AS-506)</item>
+        <item>Apollo 12 (AS-507)</item>
+        <item>Apollo 13 (AS-508)</item>
+        <item>Apollo 14 (AS-509)</item>
+        <item>Apollo 15 (AS-510)</item>
+        <item>Apollo 16 (AS-511)</item>
+        <item>Apollo 17 (AS-512)</item>
+    </string-array>
+
+    <integer-array name="Data_Photo_Apollo">
+        <item>@drawable/apolloone</item>
+        <item>@drawable/apolloseven</item>
+        <item>@drawable/apolloeight</item>
+        <item>@drawable/apollonine</item>
+        <item>@drawable/apolloten</item>
+        <item>@drawable/apolloeleven</item>
+        <item>@drawable/apollotwelve</item>
+        <item>@drawable/apollothirteen</item>
+        <item>@drawable/apolloforteen</item>
+        <item>@drawable/apollofifteen</item>
+        <item>@drawable/apollosixteen</item>
+        <item>@drawable/apolloseventeen</item>
+    </integer-array>
+
+    <string-array name="Data_Desc_Apollo">
+        <item>
+            Apollo 1 (AS-204): Originally scheduled for February 21, 1967, was the first manned mission of the Apollo program. However, on January 27, 1967, during a launch pad test, a fire broke out inside the Apollo 1 spacecraft, resulting in the tragic loss of all three crew members - Virgil "Gus" Grissom, Edward H. White II, and Roger B. Chaffee. The accident was a devastating setback for the Apollo program and led to a comprehensive review of spacecraft design, safety protocols, and crew training, resulting in significant improvements to prevent similar accidents in the future.
+        </item>
+
+        <item>
+            Apollo 7 (AS-205): Apollo 7, launched on October 11, 1968, marked the first manned flight of the Apollo program. The crew of Walter Schirra, Donn Eisele, and Walter Cunningham orbited the Earth for 11 days, conducting tests and evaluations of the spacecraft\'s systems and capabilities. This mission proved that the spacecraft and its systems were ready for future lunar missions, and it paved the way for the upcoming Apollo lunar landings.
+        </item>
+
+        <item>
+            Apollo 8 (AS-503): Apollo 8, launched on December 21, 1968, was the first manned mission to leave Earth\'s orbit and travel to the Moon. The crew of Frank Borman, James Lovell, and William Anders orbited the Moon 10 times, capturing stunning images of the lunar surface and becoming the first humans to witness and photograph an Earthrise from space. This mission was a significant milestone in human space exploration, setting the stage for the eventual lunar landings.
+        </item>
+
+        <item>
+            Apollo 9 (AS-504): Apollo 9, launched on March 3, 1969, was a critical mission to test the Lunar Module(LM) in Earth orbit. The crew of James McDivitt, David Scott, and Russell Schweickart conducted a series of maneuvers to test the LM\'s performance and its ability to dock with the Command Module(CM). They also performed the first manned flight of the Lunar Module, making it a crucial step towards the lunar landing.
+        </item>
+
+        <item>
+            Apollo 10 (AS-505): Apollo 10, launched on May 18, 1969, was a dress rehearsal for the lunar landing. The crew of Thomas Stafford, John Young, and Eugene Cernan orbited the Moon, testing the LM\'s performance in lunar orbit and conducting various tasks that would be required for the upcoming lunar landing. They descended close to the lunar surface, but did not land, serving as a crucial precursor to the historic Apollo 11 mission.
+        </item>
+
+        <item>
+            Apollo 11 (AS-506), launched on July 16, 1969, was the first manned mission to land on the Moon. The crew of Neil Armstrong, Michael Collins, and Edwin "Buzz" Aldrin made history on July 20, 1969, when Armstrong and Aldrin became the first humans to set foot on the Moon, famously declaring, "That\'s one small step for [a] man, one giant leap for mankind." The mission successfully conducted experiments, collected samples, and returned safely to Earth on July 24, 1969, marking a major milestone in human space exploration and fulfilling President John F. Kennedy\'s goal of landing humans on the Moon before the end of the decade.
+        </item>
+
+        <item>
+            Apollo 12 (AS-507), launched on November 14, 1969, was the second manned lunar landing mission. The crew of Charles "Pete" Conrad, Richard F. Gordon Jr., and Alan L. Bean faced challenges during their mission, including a lightning strike that temporarily knocked out their spacecraft systems during launch. However, they overcame these obstacles and successfully landed on the Moon on November 14, 1969. They conducted experiments, collected samples, and explored the lunar surface, demonstrating the resilience and resourcefulness of the Apollo astronauts. Apollo 12 also marked the first use of the Lunar Module\'s precision landing system, which allowed the astronauts to land within walking distance of the Surveyor III spacecraft, a robotic lander that had landed on the Moon in 1967. This successful landing further validated the precision landing capabilities of the Apollo spacecraft.
+        </item>
+
+        <item>
+            Apollo 13 (AS-508) was the seventh manned mission of NASA\'s Apollo program launched on April 11, 1970. It encountered a critical failure when an oxygen tank exploded, forcing the crew to abort their lunar landing mission and focus on returning safely to Earth. Through incredible teamwork and innovation, the crew successfully returned to Earth on April 17, 1970, making it a remarkable story of human resilience and ingenuity in the face of adversity. The mission highlighted the risks and challenges of space exploration, and its success continues to be celebrated as a symbol of human exploration and the indomitable spirit of the human quest for knowledge and discovery in space.
+        </item>
+
+        <item>
+            Apollo 14 (AS-509), launched on January 31, 1971, was the third manned lunar landing mission. The crew of Alan Shepard, Stuart Roosa, and Edgar Mitchell landed on the Moon on February 5, 1971, and conducted experiments, collected samples, and explored the lunar surface. Shepard, who had previously flown on the Mercury-Redstone 3 mission in 1961, famously hit golf balls on the lunar surface with a makeshift club, showcasing the unique challenges and opportunities of human presence on the Moon. Apollo 14 also marked the first use of the Lunar Module\'s Modularized Equipment Stowage Assembly(MESA), which allowed for easier deployment of equipment and instruments on the lunar surface.
+        </item>
+
+        <item>
+            Apollo 15 (AS-510), launched on July 26, 1971, was the first "J-mission," which involved an extended stay on the lunar surface and increased capabilities for scientific exploration. The crew of David Scott, Alfred Worden, and James Irwin spent nearly three days on the Moon, conducting experiments, collecting samples, and exploring the lunar terrain with the Lunar Roving Vehicle(LRV). They also performed the first deep space EVA(Extra-Vehicular Activity) during the apollo 15 mission, when Scott and Irwin ventured far from the Lunar Module to collect samples from the rim of Hadley Rille, a lunar canyon, and conducted experiments to study the Moon\'s geology, gravity, and atmosphere. Worden, who remained in orbit aboard the Command Module, conducted experiments and performed observations of the lunar surface from a unique vantage point. The mission also carried the first lunar surface experiments package(ALSEP), which included seismometers, spectrometers, and other instruments to gather data on the Moon\'s geophysical properties. Apollo 15 expanded our understanding of the Moon\'s composition and geology, providing valuable insights into its history and evolution.
+        </item>
+
+        <item>
+            Apollo 16 (AS-511), launched on April 16, 1972, was the fifth manned lunar landing mission. The crew of John Young, Charles Duke, and Thomas Mattingly spent just over three days on the lunar surface, conducting experiments, collecting samples, and exploring the Descartes Highlands region. Young and Duke, who descended to the lunar surface in the Lunar Module, used the Lunar Roving Vehicle(LRV) to cover a larger area and collect samples from multiple locations. Mattingly remained in orbit aboard the Command Module, conducting experiments and observations. Apollo 16 was notable for its geology-focused mission objectives, as the Descartes Highlands were believed to be representative of the Moon\'s ancient crust. The mission yielded important data on the Moon\'s geology, including evidence of ancient volcanism and impact cratering, and provided further insights into the Moon\'s geological history.
+        </item>
+
+        <item>
+            Apollo 17 (AS-512), launched on December 7, 1972, was the final manned mission of the Apollo program and the last time humans have visited the Moon to date. The crew of Eugene Cernan, Ronald Evans, and Harrison Schmitt spent just over three days on the lunar surface, conducting experiments, collecting samples, and exploring the Taurus-Littrow valley region. Schmitt, a geologist, was the first and only scientist-astronaut to walk on the Moon, providing valuable insights into the Moon\'s composition and history. Cernan and Schmitt also used the Lunar Roving Vehicle(LRV) to cover a larger area and collect samples from multiple locations. Evans remained in orbit aboard the Command Module, conducting experiments and observations. Apollo 17 was notable for its extensive geological investigations, and the samples and data collected during the mission continue to be analyzed and studied by scientists to this day, furthering our understanding of the Moon\'s geology and evolution.
+        </item>
 
     </string-array>
+
 
 </resources>

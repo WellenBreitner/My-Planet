@@ -23,9 +23,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <TextView
-            android:id="@+id/astronautName"
+            android:id="@+id/astronautListName"
             android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="104dp"
@@ -37,7 +36,7 @@
             tools:text="name" />
 
         <TextView
-            android:id="@+id/astronautDesc"
+            android:id="@+id/astronautListDescription"
             android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -49,7 +48,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.724"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/astronautName"
+            app:layout_constraintTop_toBottomOf="@+id/astronautListName"
             app:layout_constraintVertical_bias="0.0"
             tools:text="desc" />
     </androidx.constraintlayout.widget.ConstraintLayout>

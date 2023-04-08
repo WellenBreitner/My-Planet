@@ -15,8 +15,8 @@ class AstronautListAdapter(
     class AstronautListViewHodler(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val cardView: CardView = itemView.findViewById(R.id.listAstronautCardView)
         val circleImage: CircleImageView = itemView.findViewById(R.id.astronautCircleImage)
-        val name: TextView = itemView.findViewById(R.id.astronautName)
-        val desc: TextView = itemView.findViewById(R.id.astronautDesc)
+        val name: TextView = itemView.findViewById(R.id.astronautListName)
+        val desc: TextView = itemView.findViewById(R.id.astronautListDescription)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AstronautListViewHodler {
@@ -29,14 +29,14 @@ class AstronautListAdapter(
 
     override fun onBindViewHolder(holder: AstronautListViewHodler, position: Int) {
         val bind = listAstronaut[position]
-        holder.circleImage.setImageResource(bind.PhotoAstronaut)
+        holder.circleImage.setImageResource(bind.photoAstronaut)
         holder.name.text = bind.nameAstronaut
         holder.desc.text = bind.descAstronaut
 
         holder.cardView.setOnClickListener {
             val intent = Intent(holder.itemView.context, AstronautDescription::class.java)
             intent.putExtra(AstronautDescription.NAME_ASTRONAUT, bind.nameAstronaut)
-            intent.putExtra(AstronautDescription.IMAGE_ASTRONAUT, bind.PhotoAstronaut)
+            intent.putExtra(AstronautDescription.IMAGE_ASTRONAUT, bind.photoAstronaut)
             intent.putExtra(AstronautDescription.DESC_ASTRONAUT, bind.descAstronaut)
             holder.itemView.context.startActivity(intent)
         }
