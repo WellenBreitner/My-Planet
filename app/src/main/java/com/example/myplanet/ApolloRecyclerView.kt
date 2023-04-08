@@ -34,8 +34,8 @@ class ApolloRecyclerView : AppCompatActivity() {
         val getDesc = resources.getStringArray(R.array.Data_Desc_Apollo)
 
         val list = ArrayList<DataApollo>()
-        for (i in getName.indices){
-            val apollo = DataApollo(getName[i],getPhoto.getResourceId(i,-1),getDesc[i])
+        for (i in getName.indices) {
+            val apollo = DataApollo(getName[i], getPhoto.getResourceId(i, -1), getDesc[i])
             list.add(apollo)
         }
         return list
