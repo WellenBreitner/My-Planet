@@ -14,6 +14,10 @@
     <string name="star">star</string>
     <string name="rocket">rocket</string>
     <string name="astronaut">Astronaut</string>
+    <string name="planet">Planet</string>
+    <string name="apollo_project">Apollo Project</string>
+    <string name="open">Open</string>
+    <string name="close">close</string>
 
     <integer-array name="Data_Photo_Planet">
         <item>@drawable/mercury</item>

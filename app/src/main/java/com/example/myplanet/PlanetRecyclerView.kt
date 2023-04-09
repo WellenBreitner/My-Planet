@@ -3,22 +3,31 @@ package com.example.myplanet
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.Gravity
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.ImageView
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.airbnb.lottie.LottieAnimationView
+import com.google.android.material.navigation.NavigationView
 import me.relex.circleindicator.CircleIndicator2
+import java.util.NavigableMap
 
 class PlanetRecyclerView : Fragment() {
 
     private val listData = ArrayList<DataPlanet>()
+    private lateinit var ActionBarDrawerToggle : ActionBarDrawerToggle
+    private lateinit var drawerLayout: DrawerLayout
+    private lateinit var navigationView : NavigationView
     private lateinit var recyclerView: RecyclerView
     private lateinit var listView: ImageButton
     private lateinit var gridHorizontal: ImageButton
@@ -38,10 +47,41 @@ class PlanetRecyclerView : Fragment() {
         recyclerView = view.findViewById(R.id.planetRecyclerView)
         recyclerView.setHasFixedSize(true)
 
-        listView = requireActivity().findViewById(R.id.listView)
-        gridHorizontal = requireActivity().findViewById(R.id.gridHorizontal)
-        gridVertical = requireActivity().findViewById(R.id.gridVertical)
-        astronaut = requireActivity().findViewById(R.id.astronaut)
+        listView = view.findViewById(R.id.listView)
+        gridHorizontal = view.findViewById(R.id.gridHorizontal)
+        gridVertical = view.findViewById(R.id.gridVertical)
+        astronaut = view.findViewById(R.id.astronaut)
+
+        drawerLayout = view.findViewById(R.id.drawerLayout)
+        navigationView = view.findViewById(R.id.navigationView)
+
+        ActionBarDrawerToggle = ActionBarDrawerToggle(requireActivity(),drawerLayout,R.string.open,R.string.close)
+        drawerLayout.addDrawerListener(ActionBarDrawerToggle)
+        ActionBarDrawerToggle.syncState()
+
+        navigationView.setNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.planetMenu -> {
+                    val fragment = PlanetRecyclerView()
+                    val fragmentManager = parentFragmentManager
+                    fragmentManager.beginTransaction().apply {
+                        replace(R.id.fragment_Container,fragment)
+                        addToBackStack(null)
+                        commit()
+                    }
+                }
+                R.id.astronautMenu -> {
+                    val intent = Intent(requireContext(),AstronautRecyclerView::class.java)
+                    startActivity(intent)
+                }
+                R.id.apolloMenu -> {
+                    val intent = Intent(requireContext(),ApolloRecyclerView::class.java)
+                    startActivity(intent)
+                }
+            }
+            true
+        }
+
 
         listData.addAll(getDataPlanet())
         showGridHorizontalView()
@@ -113,5 +153,11 @@ class PlanetRecyclerView : Fragment() {
         return listPlanet
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (ActionBarDrawerToggle.onOptionsItemSelected(item)){
+            return true
+        }
+        return super.onOptionsItemSelected(item)
+    }
 
 }
