@@ -1,16 +1,19 @@
 package com.example.myplanet
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
 class ApolloListAdapter(
     private val listData: ArrayList<DataApollo>
 ) : RecyclerView.Adapter<ApolloListAdapter.ApolloListViewHolder>() {
     class ApolloListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val cardView: CardView = itemView.findViewById(R.id.listApolloCardView)
         val imageView: ImageView = itemView.findViewById(R.id.apolloCircleImage)
         val name: TextView = itemView.findViewById(R.id.apolloListName)
         val desc: TextView = itemView.findViewById(R.id.apolloListDesc)
@@ -30,5 +33,14 @@ class ApolloListAdapter(
         holder.imageView.setImageResource(bind.photoAppolo)
         holder.name.text = bind.nameApollo
         holder.desc.text = bind.descApollo
+
+        holder.cardView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, ApolloDescription::class.java)
+            intent.putExtra(ApolloDescription.NAME_APOLLO, bind.nameApollo)
+            intent.putExtra(ApolloDescription.DESC_APOLLO, bind.descApollo)
+            intent.putExtra(ApolloDescription.IMAGE_APOLLO, bind.photoAppolo)
+            holder.itemView.context.startActivity(intent)
+
+        }
     }
 }
