@@ -18,6 +18,7 @@
     <string name="apollo_project">Apollo Project</string>
     <string name="open">Open</string>
     <string name="close">close</string>
+    <string name="imagebutton">imageButton</string>
 
     <integer-array name="Data_Photo_Planet">
         <item>@drawable/mercury</item>

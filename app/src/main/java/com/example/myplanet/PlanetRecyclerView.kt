@@ -25,14 +25,15 @@ import java.util.NavigableMap
 class PlanetRecyclerView : Fragment() {
 
     private val listData = ArrayList<DataPlanet>()
-    private lateinit var ActionBarDrawerToggle : ActionBarDrawerToggle
+    private lateinit var ActionBarDrawerToggle: ActionBarDrawerToggle
     private lateinit var drawerLayout: DrawerLayout
-    private lateinit var navigationView : NavigationView
+    private lateinit var navigationView: NavigationView
     private lateinit var recyclerView: RecyclerView
     private lateinit var listView: ImageButton
     private lateinit var gridHorizontal: ImageButton
     private lateinit var gridVertical: ImageButton
     private lateinit var astronaut: LottieAnimationView
+    private lateinit var drawerLayoutImage: ImageView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -51,31 +52,42 @@ class PlanetRecyclerView : Fragment() {
         gridHorizontal = view.findViewById(R.id.gridHorizontal)
         gridVertical = view.findViewById(R.id.gridVertical)
         astronaut = view.findViewById(R.id.astronaut)
+        drawerLayoutImage = view.findViewById(R.id.drawerLayoutImage)
 
         drawerLayout = view.findViewById(R.id.drawerLayout)
         navigationView = view.findViewById(R.id.navigationView)
 
-        ActionBarDrawerToggle = ActionBarDrawerToggle(requireActivity(),drawerLayout,R.string.open,R.string.close)
-        drawerLayout.addDrawerListener(ActionBarDrawerToggle)
-        ActionBarDrawerToggle.syncState()
+        drawerLayoutImage.setOnClickListener {
+            ActionBarDrawerToggle =
+                ActionBarDrawerToggle(
+                    requireActivity(),
+                    drawerLayout,
+                    R.string.open,
+                    R.string.close
+                )
+            drawerLayout.addDrawerListener(ActionBarDrawerToggle)
+            drawerLayout.open()
+            ActionBarDrawerToggle.syncState()
+        }
+
 
         navigationView.setNavigationItemSelectedListener {
-            when(it.itemId){
+            when (it.itemId) {
                 R.id.planetMenu -> {
                     val fragment = PlanetRecyclerView()
                     val fragmentManager = parentFragmentManager
                     fragmentManager.beginTransaction().apply {
-                        replace(R.id.fragment_Container,fragment)
+                        replace(R.id.fragment_Container, fragment)
                         addToBackStack(null)
                         commit()
                     }
                 }
                 R.id.astronautMenu -> {
-                    val intent = Intent(requireContext(),AstronautRecyclerView::class.java)
+                    val intent = Intent(requireContext(), AstronautRecyclerView::class.java)
                     startActivity(intent)
                 }
                 R.id.apolloMenu -> {
-                    val intent = Intent(requireContext(),ApolloRecyclerView::class.java)
+                    val intent = Intent(requireContext(), ApolloRecyclerView::class.java)
                     startActivity(intent)
                 }
             }
@@ -154,7 +166,7 @@ class PlanetRecyclerView : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (ActionBarDrawerToggle.onOptionsItemSelected(item)){
+        if (ActionBarDrawerToggle.onOptionsItemSelected(item)) {
             return true
         }
         return super.onOptionsItemSelected(item)

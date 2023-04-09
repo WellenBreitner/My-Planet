@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/planetMenu"
+        android:icon="@drawable/planeticon"
+        android:title="@string/planet" />
+
+    <item
+        android:id="@+id/astronautMenu"
+        android:icon="@drawable/astronauticon"
+        android:title="@string/astronaut" />
+
+    <item
+        android:id="@+id/apolloMenu"
+        android:icon="@drawable/shuttleicon"
+        android:title="@string/apollo_project" />
+
+</menu>

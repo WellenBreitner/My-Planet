@@ -33,6 +33,18 @@
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toStartOf="@+id/imageView" />
 
+        <ImageView
+            android:id="@+id/drawerLayoutImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/list"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/imagebutton" />
+
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/astronaut"
             android:layout_width="130dp"
@@ -165,9 +177,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:menu="@menu/menu"
         app:headerLayout="@layout/header_layout"
-        />
+        app:menu="@menu/menu" />
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
