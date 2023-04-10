@@ -11,7 +11,7 @@
     <string name="gridHorizontal">GridHorizontal</string>
     <string name="gridVertical">gridVertical</string>
     <string name="my_nplanet">My\nPlanet</string>
-    <string name="star">star</string>
+    <string name="star">Star</string>
     <string name="rocket">rocket</string>
     <string name="astronaut">Astronaut</string>
     <string name="planet">Planet</string>
@@ -21,8 +21,8 @@
     <string name="imagebutton">imageButton</string>
     <string name="moon">Moon</string>
     <string name="sun">Sun</string>
-    <string name="satelit">Satelit</string>
-    <string name="exit">exit</string>
+    <string name="satelit">Satellite</string>
+    <string name="exit">Exit</string>
 
     <integer-array name="Data_Photo_Planet">
         <item>@drawable/mercury</item>
