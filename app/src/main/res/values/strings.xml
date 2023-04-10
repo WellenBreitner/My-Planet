@@ -19,6 +19,10 @@
     <string name="open">Open</string>
     <string name="close">close</string>
     <string name="imagebutton">imageButton</string>
+    <string name="moon">Moon</string>
+    <string name="sun">Sun</string>
+    <string name="satelit">Satelit</string>
+    <string name="exit">exit</string>
 
     <integer-array name="Data_Photo_Planet">
         <item>@drawable/mercury</item>

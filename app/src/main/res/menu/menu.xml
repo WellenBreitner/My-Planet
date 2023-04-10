@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
         android:id="@+id/planetMenu"
         android:icon="@drawable/planeticon"
@@ -14,5 +15,34 @@
         android:id="@+id/apolloMenu"
         android:icon="@drawable/shuttleicon"
         android:title="@string/apollo_project" />
+
+    <item android:title="@string/star" >
+        <menu>
+            <item
+                android:id="@+id/sunMenu"
+                android:title="@string/sun"
+                android:icon="@drawable/sun"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/satelit">
+        <menu>
+            <item
+                android:id="@+id/moonMenu"
+                android:title="@string/moon"
+                android:icon="@drawable/moon"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/exit">
+        <menu>
+            <item
+                android:id="@+id/exitMenu"
+                android:title="@string/exit"
+                android:icon="@drawable/exit"/>
+        </menu>
+    </item>
+
+
 
 </menu>

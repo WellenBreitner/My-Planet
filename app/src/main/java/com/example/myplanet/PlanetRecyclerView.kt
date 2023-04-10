@@ -57,6 +57,9 @@ class PlanetRecyclerView : Fragment() {
         drawerLayout = view.findViewById(R.id.drawerLayout)
         navigationView = view.findViewById(R.id.navigationView)
 
+        navigationView.itemIconTintList = null
+        navigationView.setItemIconSize(60)
+
         drawerLayoutImage.setOnClickListener {
             ActionBarDrawerToggle =
                 ActionBarDrawerToggle(
@@ -89,6 +92,9 @@ class PlanetRecyclerView : Fragment() {
                 R.id.apolloMenu -> {
                     val intent = Intent(requireContext(), ApolloRecyclerView::class.java)
                     startActivity(intent)
+                }
+                R.id.exitMenu -> {
+                    drawerLayout.close()
                 }
             }
             true
