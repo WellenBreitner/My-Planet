@@ -35,6 +35,7 @@ class PlanetRecyclerView : Fragment() {
     private lateinit var astronaut: LottieAnimationView
     private lateinit var drawerLayoutImage: ImageView
     private lateinit var moonImage: ImageView
+    private lateinit var sunImage: ImageView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -62,6 +63,13 @@ class PlanetRecyclerView : Fragment() {
         navigationView.setItemIconSize(60)
 
         moonImage = view.findViewById(R.id.moon)
+
+        sunImage = view.findViewById(R.id.sun)
+
+        sunImage.setOnClickListener {
+            val intent = Intent(requireContext(), SunDescription::class.java)
+            startActivity(intent)
+        }
 
         moonImage.setOnClickListener {
             val intent = Intent(requireContext(), MoonDescription::class.java)
@@ -103,6 +111,10 @@ class PlanetRecyclerView : Fragment() {
                 }
                 R.id.moonMenu -> {
                     val intent = Intent(requireContext(), MoonDescription::class.java)
+                    startActivity(intent)
+                }
+                R.id.sunMenu -> {
+                    val intent = Intent(requireContext(), SunDescription::class.java)
                     startActivity(intent)
                 }
                 R.id.exitMenu -> {

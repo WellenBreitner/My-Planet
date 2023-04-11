@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyPlanet"
         tools:targetApi="31">
         <activity
+            android:name=".SunDescription"
+            android:exported="false" />
+        <activity
             android:name=".MoonDescription"
             android:exported="false" />
         <activity
