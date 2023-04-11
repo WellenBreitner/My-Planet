@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MoonDescription">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/starDescMoonImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:contentDescription="@string/star"
+            android:scaleType="center"
+            android:src="@drawable/star" />
+
+
+        <ImageView
+            android:id="@+id/rocketMoon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/starDescMoonImage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginBottom="40dp"
+            android:contentDescription="@string/rocket"
+            android:src="@drawable/rocket2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/descImageMoon"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="160dp"
+            android:layout_marginEnd="1dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/moon"
+            android:scaleType="centerInside"
+            android:src="@drawable/moon" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/starDescMoonImage"
+            android:layout_margin="16dp"
+            app:cardBackgroundColor="@color/purple_200"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/starDescMoonImage">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/moonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/moon"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="317dp" />
+
+                <TextView
+                    android:id="@+id/MoonDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/moonText"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/Data_Desc_Moon"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="383dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>

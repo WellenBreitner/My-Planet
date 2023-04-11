@@ -15,6 +15,7 @@ class ApolloRecyclerView : AppCompatActivity() {
         setContentView(R.layout.activity_apollo_recycler_view)
 
         recyclerView = findViewById(R.id.apolloRecyclerView)
+        recyclerView.setHasFixedSize(true)
 
         listData.addAll(getDataApollo())
         showApolloList()
