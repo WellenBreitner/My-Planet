@@ -26,8 +26,6 @@ class ApolloListAdapter(
         )
     }
 
-    override fun getItemCount() = listData.size
-
     override fun onBindViewHolder(holder: ApolloListViewHolder, position: Int) {
         val bind = listData[position]
 
@@ -51,4 +49,6 @@ class ApolloListAdapter(
 
         }
     }
+    override fun getItemCount() = listData.size
+
 }
