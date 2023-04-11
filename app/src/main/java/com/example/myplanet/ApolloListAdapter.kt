@@ -4,6 +4,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
@@ -33,6 +34,13 @@ class ApolloListAdapter(
         holder.imageView.setImageResource(bind.photoAppolo)
         holder.name.text = bind.nameApollo
         holder.desc.text = bind.descApollo
+
+        holder.cardView.startAnimation(
+            AnimationUtils.loadAnimation(
+                holder.cardView.context,
+                com.airbnb.lottie.R.anim.abc_slide_in_bottom
+            )
+        )
 
         holder.cardView.setOnClickListener {
             val intent = Intent(holder.itemView.context, ApolloDescription::class.java)

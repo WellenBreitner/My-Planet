@@ -15,7 +15,6 @@ class ApolloRecyclerView : AppCompatActivity() {
         setContentView(R.layout.activity_apollo_recycler_view)
 
         recyclerView = findViewById(R.id.apolloRecyclerView)
-        recyclerView.setHasFixedSize(true)
 
         listData.addAll(getDataApollo())
         showApolloList()
@@ -33,11 +32,11 @@ class ApolloRecyclerView : AppCompatActivity() {
         val getName = resources.getStringArray(R.array.Data_Name_Apollo)
         val getDesc = resources.getStringArray(R.array.Data_Desc_Apollo)
 
-        val list = ArrayList<DataApollo>()
+        val listApollo = ArrayList<DataApollo>()
         for (i in getName.indices) {
             val apollo = DataApollo(getName[i], getPhoto.getResourceId(i, -1), getDesc[i])
-            list.add(apollo)
+            listApollo.add(apollo)
         }
-        return list
+        return listApollo
     }
 }

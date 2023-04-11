@@ -4,6 +4,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
@@ -32,6 +33,13 @@ class AstronautListAdapter(
         holder.circleImage.setImageResource(bind.photoAstronaut)
         holder.name.text = bind.nameAstronaut
         holder.desc.text = bind.descAstronaut
+
+        holder.cardView.startAnimation(
+            AnimationUtils.loadAnimation(
+                holder.cardView.context,
+                com.airbnb.lottie.R.anim.abc_slide_in_bottom
+            )
+        )
 
         holder.cardView.setOnClickListener {
             val intent = Intent(holder.itemView.context, AstronautDescription::class.java)

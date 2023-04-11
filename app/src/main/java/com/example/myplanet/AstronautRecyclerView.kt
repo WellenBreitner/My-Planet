@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class AstronautRecyclerView : AppCompatActivity() {
     private lateinit var recyclerview: RecyclerView
-    private var listData2 = ArrayList<DataAstronaut>()
+    private var listData = ArrayList<DataAstronaut>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,13 +17,13 @@ class AstronautRecyclerView : AppCompatActivity() {
         recyclerview = findViewById(R.id.astronautRecyclerView)
         recyclerview.setHasFixedSize(true)
 
-        listData2.addAll(getDataAstronaut())
+        listData.addAll(getDataAstronaut())
         showListAstronaut()
     }
 
     private fun showListAstronaut() {
         recyclerview.layoutManager = LinearLayoutManager(this)
-        val adapter = AstronautListAdapter(listData2)
+        val adapter = AstronautListAdapter(listData)
         recyclerview.adapter = adapter
     }
 

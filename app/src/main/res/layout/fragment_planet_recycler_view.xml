@@ -12,6 +12,7 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:id="@+id/backgroundImage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/image"
@@ -31,7 +32,18 @@
             android:contentDescription="@string/image"
             android:src="@drawable/moon"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-            app:layout_constraintEnd_toStartOf="@+id/imageView" />
+            app:layout_constraintEnd_toStartOf="@+id/earth" />
+
+        <ImageView
+            android:id="@+id/sun"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="268dp"
+            android:layout_marginTop="364dp"
+            android:src="@drawable/sun"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/earth"
+            android:contentDescription="@string/sun" />
 
         <ImageView
             android:id="@+id/drawerLayoutImage"
@@ -61,7 +73,7 @@
             app:lottie_rawRes="@raw/astronot" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/earth"
             android:layout_width="395dp"
             android:layout_height="325dp"
             android:layout_marginStart="56dp"
@@ -87,6 +99,7 @@
 
 
         <ImageView
+            android:id="@+id/shapeView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:contentDescription="@string/image"
@@ -109,7 +122,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textViewGreet"
                 android:layout_width="240dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
