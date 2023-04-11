@@ -7,5 +7,6 @@ import kotlinx.parcelize.Parcelize
 data class DataAstronaut(
     var photoAstronaut: Int,
     var nameAstronaut: String,
-    var descAstronaut: String
+    var descAstronaut: String,
+    var DataApollo: String
 ) : Parcelable

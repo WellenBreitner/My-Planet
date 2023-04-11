@@ -32,6 +32,7 @@ class AstronautRecyclerView : AppCompatActivity() {
         val getPhotoAstronaut = resources.obtainTypedArray(R.array.Data_Photo_Astronaut)
         val getNameAstronaut = resources.getStringArray(R.array.Data_Name_Astronaut)
         val getDescriptionAstronaut = resources.getStringArray(R.array.Data_Desc_Astronaut)
+        val getDataApollo = resources.getStringArray(R.array.Data_Apollo)
 
         val listAstronaut = ArrayList<DataAstronaut>()
         for (i in getNameAstronaut.indices) {
@@ -39,7 +40,8 @@ class AstronautRecyclerView : AppCompatActivity() {
                 DataAstronaut(
                     getPhotoAstronaut.getResourceId(i, -1),
                     getNameAstronaut[i],
-                    getDescriptionAstronaut[i]
+                    getDescriptionAstronaut[i],
+                    getDataApollo[i]
                 )
             listAstronaut.add(astronaut)
         }
