@@ -3,7 +3,6 @@ package com.example.myplanet
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
@@ -20,7 +19,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.airbnb.lottie.LottieAnimationView
 import com.google.android.material.navigation.NavigationView
 import me.relex.circleindicator.CircleIndicator2
-import java.util.NavigableMap
 
 class PlanetRecyclerView : Fragment() {
 
@@ -186,15 +184,31 @@ class PlanetRecyclerView : Fragment() {
         val getName = resources.getStringArray(R.array.Data_Name_Planet)
         val getPhoto = resources.obtainTypedArray(R.array.Data_Photo_Planet)
         val getDescription = resources.getStringArray(R.array.Data_Desc_Planet)
-        val getTemperature = resources.obtainTypedArray(R.array.Data_Temperature_Planet)
-        val getRotaion = resources.obtainTypedArray(R.array.Data_Rotation_Planet)
-        val getDiameter = resources.obtainTypedArray(R.array.Data_Diameter_Planet)
-        val getDistance = resources.obtainTypedArray(R.array.Data_Distance_Planet)
+        val getTemperatureImage = resources.obtainTypedArray(R.array.Data_Temperature_Planet_Image)
+        val getRotaionImage = resources.obtainTypedArray(R.array.Data_Rotation_Planet_Image)
+        val getDiameterImage = resources.obtainTypedArray(R.array.Data_Diameter_Planet_Image)
+        val getDistanceImage = resources.obtainTypedArray(R.array.Data_Distance_Planet_Image)
+        val getTemperatureText = resources.getStringArray(R.array.Data_Temperature_Planet_Text)
+        val getRotationText = resources.getStringArray(R.array.Data_Rotation_Planet_Text)
+        val getDiameterText = resources.getStringArray(R.array.Data_Diameter_Planet_Text)
+        val getDistanceText = resources.getStringArray(R.array.Data_Distance_Planet_Text)
+
 
 
         val listPlanet = ArrayList<DataPlanet>()
         for (i in getName.indices) {
-            val planet = DataPlanet(getName[i], getPhoto.getResourceId(i, -1), getDescription[i],getTemperature.getResourceId(i,-1),getRotaion.getResourceId(i,-1),getDiameter.getResourceId(i,-1),getDistance.getResourceId(i,-1))
+            val planet = DataPlanet(getName[i],
+                getPhoto.getResourceId(i, -1),
+                getDescription[i],
+                getTemperatureImage.getResourceId(i,-1),
+                getRotaionImage.getResourceId(i,-1),
+                getDiameterImage.getResourceId(i,-1),
+                getDistanceImage.getResourceId(i,-1),
+                getTemperatureText[i],
+                getRotationText[i],
+                getDiameterText[i],
+                getDistanceText[i]
+            )
             listPlanet.add(planet)
         }
         return listPlanet

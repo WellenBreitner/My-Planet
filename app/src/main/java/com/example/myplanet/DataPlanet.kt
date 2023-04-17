@@ -11,5 +11,9 @@ data class DataPlanet(
     var temperaturePlanet: Int,
     var rotationPlanet: Int,
     var diameterPlanet: Int,
-    var distancePlanet: Int
+    var distancePlanet: Int,
+    var temperaturePlanetText: String,
+    var rotationPlanetText: String,
+    var diameterPlanetText: String,
+    var distancePlanetText: String
 ) : Parcelable

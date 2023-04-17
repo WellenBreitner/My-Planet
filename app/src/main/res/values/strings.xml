@@ -401,7 +401,7 @@
     <string name="diameter">diameter</string>
     <string name="distance">distance</string>
 
-    <integer-array name="Data_Temperature_Planet">
+    <integer-array name="Data_Temperature_Planet_Image">
         <item>@drawable/temperature</item>
         <item>@drawable/temperature</item>
         <item>@drawable/temperature</item>
@@ -412,7 +412,7 @@
         <item>@drawable/temperature</item>
     </integer-array>
 
-    <integer-array name="Data_Rotation_Planet">
+    <integer-array name="Data_Rotation_Planet_Image">
         <item>@drawable/rotation</item>
         <item>@drawable/rotation</item>
         <item>@drawable/rotation</item>
@@ -423,7 +423,7 @@
         <item>@drawable/rotation</item>
     </integer-array>
 
-    <integer-array name="Data_Diameter_Planet">
+    <integer-array name="Data_Diameter_Planet_Image">
         <item>@drawable/diameter</item>
         <item>@drawable/diameter</item>
         <item>@drawable/diameter</item>
@@ -434,7 +434,7 @@
         <item>@drawable/diameter</item>
     </integer-array>
 
-    <integer-array name="Data_Distance_Planet">
+    <integer-array name="Data_Distance_Planet_Image">
         <item>@drawable/distance</item>
         <item>@drawable/distance</item>
         <item>@drawable/distance</item>
@@ -444,4 +444,50 @@
         <item>@drawable/distance</item>
         <item>@drawable/distance</item>
     </integer-array>
+
+    <string-array name="Data_Temperature_Planet_Text">
+        <item>180°C – 430°C</item>
+        <item>462°C</item>
+        <item>33°C</item>
+        <item>13,85°C</item>
+        <item>-108,15°C</item>
+        <item>-139,15°C</item>
+        <item>-224,15°C</item>
+        <item>-214°C</item>
+    </string-array>
+
+    <string-array name="Data_Rotation_Planet_Text">
+        <item>59 days</item>
+        <item>243 days</item>
+        <item>24 hours</item>
+        <item>24 hours</item>
+        <item>10 hours</item>
+        <item>11 hours</item>
+        <item>17 hours</item>
+        <item>16 hours</item>
+    </string-array>
+
+    <string-array name="Data_Diameter_Planet_Text">
+        <item>4.879 KM</item>
+        <item>12.104 KM</item>
+        <item>12.742 KM</item>
+        <item>6.779 KM</item>
+        <item>139.820 KM</item>
+        <item>116.460 KM</item>
+        <item>50.724 KM</item>
+        <item>49.224 KM</item>
+    </string-array>
+
+    <string-array name="Data_Distance_Planet_Text">
+        <item>58 Million KM</item>
+        <item>108 Million KM</item>
+        <item>150 Million KM</item>
+        <item>218 Million KM</item>
+        <item>776 Million KM</item>
+        <item>1.4 Billion KM</item>
+        <item>2.9 Billion KM</item>
+        <item>4.4 Billion KM</item>
+    </string-array>
+
+
 </resources>

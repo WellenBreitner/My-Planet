@@ -17,10 +17,15 @@ class GridHorizontalAdapter(
         val textName: TextView = itemView.findViewById(R.id.gridHorizontalNameOfPlanet)
         val image: ImageView = itemView.findViewById(R.id.gridHorizontalImageOfPlanet)
         val cardView: CardView = itemView.findViewById(R.id.gridPlanetHorizontalCardView)
-        val temperature: ImageView = itemView.findViewById(R.id.temperatureImage)
-        val rotation: ImageView = itemView.findViewById(R.id.rotaionImage)
-        val diameter: ImageView = itemView.findViewById(R.id.diameterImage)
-        val distance: ImageView = itemView.findViewById(R.id.distanceImage)
+        val temperature: ImageView = itemView.findViewById(R.id.gridHorizontalTemperatureImage)
+        val rotation: ImageView = itemView.findViewById(R.id.gridHorizontalRotationImage)
+        val diameter: ImageView = itemView.findViewById(R.id.gridHorizontalDiameterImage)
+        val distance: ImageView = itemView.findViewById(R.id.gridHorizontalDistanceImage)
+        val temperatureText: TextView = itemView.findViewById(R.id.gridHorizontalTemperatureText)
+        val rotationText: TextView = itemView.findViewById(R.id.gridHorizontalRotationText)
+        val diameterText: TextView = itemView.findViewById(R.id.gridHorizontalDiameterText)
+        val distanceText: TextView = itemView.findViewById(R.id.gridHorizontalDistanceText)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GridViewHolder {
@@ -38,6 +43,11 @@ class GridHorizontalAdapter(
         holder.rotation.setImageResource(bindData.rotationPlanet)
         holder.diameter.setImageResource(bindData.diameterPlanet)
         holder.distance.setImageResource(bindData.distancePlanet)
+        holder.temperatureText.text = bindData.temperaturePlanetText
+        holder.rotationText.text = bindData.rotationPlanetText
+        holder.diameterText.text = bindData.diameterPlanetText
+        holder.distanceText.text = bindData.distancePlanetText
+
 
         holder.cardView.startAnimation(
             AnimationUtils.loadAnimation(

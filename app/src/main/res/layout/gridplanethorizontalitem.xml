@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/gridPlanetHorizontalCardView"
-    android:layout_width="200dp"
-    android:layout_height="300dp"
+    android:layout_width="260dp"
+    android:layout_height="280dp"
     android:layout_gravity="bottom"
-    android:layout_marginStart="16dp"
-    android:layout_marginEnd="35dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="25dp"
     android:layout_marginBottom="10dp"
     app:cardBackgroundColor="@color/purple_200"
     app:cardCornerRadius="30dp">
@@ -18,10 +18,10 @@
 
         <ImageView
             android:id="@+id/gridHorizontalImageOfPlanet"
-            android:layout_width="200dp"
+            android:layout_width="250dp"
             android:layout_height="190dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginBottom="128dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginBottom="124dp"
             android:contentDescription="@string/image"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -32,62 +32,116 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
             android:fontFamily="serif-monospace"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/gridHorizontalImageOfPlanet"
             tools:text="mercury" />
 
         <ImageView
-            android:id="@+id/temperatureImage"
+            android:id="@+id/gridHorizontalTemperatureImage"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
+            android:contentDescription="@string/temperature"
             android:src="@drawable/temperature"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridHorizontalNameOfPlanet" />
+
+        <TextView
+            android:id="@+id/gridHorizontalTemperatureText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/gridHorizontalDiameterImage"
+            app:layout_constraintStart_toEndOf="@+id/gridHorizontalTemperatureImage"
             app:layout_constraintTop_toBottomOf="@+id/gridHorizontalNameOfPlanet"
-            android:contentDescription="@string/temperature" />
+            tools:text="tesdfjisdi" />
 
         <ImageView
-            android:id="@+id/rotaionImage"
+            android:id="@+id/gridHorizontalRotationImage"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="96dp"
+            android:contentDescription="@string/ratation"
             android:src="@drawable/rotation"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/temperatureImage"
-            android:contentDescription="@string/ratation" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridHorizontalDiameterImage" />
+
+        <TextView
+            android:id="@+id/gridHorizontalRotationText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/gridHorizontalRotationImage"
+            app:layout_constraintTop_toBottomOf="@+id/gridHorizontalDiameterText"
+            app:layout_constraintVertical_bias="0.444"
+            tools:text="tesdfjisdi" />
 
         <ImageView
-            android:id="@+id/diameterImage"
+            android:id="@+id/gridHorizontalDiameterImage"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginTop="12dp"
+            android:layout_marginEnd="96dp"
+            android:contentDescription="@string/diameter"
             android:src="@drawable/diameter"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.474"
-            app:layout_constraintStart_toEndOf="@+id/rotaionImage"
             app:layout_constraintTop_toBottomOf="@+id/gridHorizontalNameOfPlanet"
-            android:contentDescription="@string/diameter" />
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/gridHorizontalDiameterText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="4dp"
+            app:layout_goneMarginEnd="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/gridHorizontalDiameterImage"
+            app:layout_constraintTop_toBottomOf="@+id/gridHorizontalNameOfPlanet"
+            tools:text="tesdfjisdi" />
 
         <ImageView
-            android:id="@+id/distanceImage"
+            android:id="@+id/gridHorizontalDistanceImage"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:contentDescription="@string/distance"
             android:src="@drawable/distance"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.474"
-            app:layout_constraintStart_toEndOf="@+id/rotaionImage"
-            app:layout_constraintTop_toBottomOf="@+id/diameterImage"
-            android:contentDescription="@string/distance" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridHorizontalTemperatureImage" />
+
+        <TextView
+            android:id="@+id/gridHorizontalDistanceText"
+            android:layout_width="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/gridHorizontalRotationImage"
+            app:layout_constraintStart_toEndOf="@+id/gridHorizontalDistanceImage"
+            app:layout_constraintTop_toBottomOf="@+id/gridHorizontalTemperatureText"
+            tools:text="tesdfjisdi" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
