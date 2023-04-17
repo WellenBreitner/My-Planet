@@ -17,6 +17,10 @@ class PlanetListAdapter(private val listPlanet: ArrayList<DataPlanet>) :
         val textView2: TextView = itemView.findViewById(R.id.listDescOfPlanet)
         val imageView: ImageView = itemView.findViewById(R.id.listImageOfPlanet)
         val cardView: CardView = itemView.findViewById(R.id.listPlanetCardView)
+//        val temperature: ImageView = itemView.findViewById(R.id.temperatureImage)
+//        val rotation: ImageView = itemView.findViewById(R.id.rotaionImage)
+//        val diameter: ImageView = itemView.findViewById(R.id.diameterImage)
+//        val distance: ImageView = itemView.findViewById(R.id.distanceImage)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
@@ -31,6 +35,11 @@ class PlanetListAdapter(private val listPlanet: ArrayList<DataPlanet>) :
         holder.imageView.setImageResource(bindData.photoPlanet)
         holder.textView.text = bindData.namePlanet
         holder.textView2.text = bindData.descriptionPlanet
+//        holder.temperature.setImageResource(bindData.temperaturePlanet)
+//        holder.rotation.setImageResource(bindData.rotationPlanet)
+//        holder.diameter.setImageResource(bindData.diameterPlanet)
+//        holder.distance.setImageResource(bindData.distancePlanet)
+
 
         holder.cardView.startAnimation(
             AnimationUtils.loadAnimation(

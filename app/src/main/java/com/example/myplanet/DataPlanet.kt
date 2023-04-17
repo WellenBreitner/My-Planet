@@ -7,5 +7,9 @@ import kotlinx.parcelize.Parcelize
 data class DataPlanet(
     var namePlanet: String,
     var photoPlanet: Int,
-    var descriptionPlanet: String
+    var descriptionPlanet: String,
+    var temperaturePlanet: Int,
+    var rotationPlanet: Int,
+    var diameterPlanet: Int,
+    var distancePlanet: Int
 ) : Parcelable

@@ -396,6 +396,52 @@
         \nThe sun is also responsible for Earth\'s weather and climate, as its energy drives atmospheric processes such as wind, water cycle, and temperature patterns. It has sunspots, which are cooler and darker areas on its surface caused by magnetic activity, and solar flares, which are powerful eruptions of energy that can have an impact on Earth\'s technology and communication systems.\n
         \nThe sun has been a subject of fascination and worship in many cultures throughout history, and it plays a vital role in numerous mythologies and religions. It is also a subject of scientific study, with ongoing research to understand its properties, behavior, and role in the universe. While the sun is essential for life on Earth, it is important to remember that direct exposure to its intense heat and radiation can be harmful, and precautions should be taken when observing or studying it.
     </string>
+    <string name="temperature">temperature</string>
+    <string name="ratation">ratation</string>
+    <string name="diameter">diameter</string>
+    <string name="distance">distance</string>
 
+    <integer-array name="Data_Temperature_Planet">
+        <item>@drawable/temperature</item>
+        <item>@drawable/temperature</item>
+        <item>@drawable/temperature</item>
+        <item>@drawable/temperature</item>
+        <item>@drawable/temperature</item>
+        <item>@drawable/temperature</item>
+        <item>@drawable/temperature</item>
+        <item>@drawable/temperature</item>
+    </integer-array>
 
+    <integer-array name="Data_Rotation_Planet">
+        <item>@drawable/rotation</item>
+        <item>@drawable/rotation</item>
+        <item>@drawable/rotation</item>
+        <item>@drawable/rotation</item>
+        <item>@drawable/rotation</item>
+        <item>@drawable/rotation</item>
+        <item>@drawable/rotation</item>
+        <item>@drawable/rotation</item>
+    </integer-array>
+
+    <integer-array name="Data_Diameter_Planet">
+        <item>@drawable/diameter</item>
+        <item>@drawable/diameter</item>
+        <item>@drawable/diameter</item>
+        <item>@drawable/diameter</item>
+        <item>@drawable/diameter</item>
+        <item>@drawable/diameter</item>
+        <item>@drawable/diameter</item>
+        <item>@drawable/diameter</item>
+    </integer-array>
+
+    <integer-array name="Data_Distance_Planet">
+        <item>@drawable/distance</item>
+        <item>@drawable/distance</item>
+        <item>@drawable/distance</item>
+        <item>@drawable/distance</item>
+        <item>@drawable/distance</item>
+        <item>@drawable/distance</item>
+        <item>@drawable/distance</item>
+        <item>@drawable/distance</item>
+    </integer-array>
 </resources>

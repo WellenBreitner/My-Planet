@@ -96,7 +96,7 @@ class PlanetRecyclerView : Fragment() {
                     val fragment = PlanetRecyclerView()
                     val fragmentManager = parentFragmentManager
                     fragmentManager.beginTransaction().apply {
-                        replace(R.id.fragment_Container, fragment)
+                        add(R.id.fragment_Container, fragment)
                         addToBackStack(null)
                         commit()
                     }
@@ -186,10 +186,15 @@ class PlanetRecyclerView : Fragment() {
         val getName = resources.getStringArray(R.array.Data_Name_Planet)
         val getPhoto = resources.obtainTypedArray(R.array.Data_Photo_Planet)
         val getDescription = resources.getStringArray(R.array.Data_Desc_Planet)
+        val getTemperature = resources.obtainTypedArray(R.array.Data_Temperature_Planet)
+        val getRotaion = resources.obtainTypedArray(R.array.Data_Rotation_Planet)
+        val getDiameter = resources.obtainTypedArray(R.array.Data_Diameter_Planet)
+        val getDistance = resources.obtainTypedArray(R.array.Data_Distance_Planet)
+
 
         val listPlanet = ArrayList<DataPlanet>()
         for (i in getName.indices) {
-            val planet = DataPlanet(getName[i], getPhoto.getResourceId(i, -1), getDescription[i])
+            val planet = DataPlanet(getName[i], getPhoto.getResourceId(i, -1), getDescription[i],getTemperature.getResourceId(i,-1),getRotaion.getResourceId(i,-1),getDiameter.getResourceId(i,-1),getDistance.getResourceId(i,-1))
             listPlanet.add(planet)
         }
         return listPlanet

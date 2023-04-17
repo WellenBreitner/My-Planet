@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/gridPlanetHorizontalCardView"
     android:layout_width="200dp"
-    android:layout_height="250dp"
+    android:layout_height="300dp"
     android:layout_gravity="bottom"
     android:layout_marginStart="16dp"
     android:layout_marginEnd="35dp"
@@ -20,8 +20,8 @@
             android:id="@+id/gridHorizontalImageOfPlanet"
             android:layout_width="200dp"
             android:layout_height="190dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginBottom="90dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginBottom="128dp"
             android:contentDescription="@string/image"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,6 +42,53 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/gridHorizontalImageOfPlanet"
             tools:text="mercury" />
+
+        <ImageView
+            android:id="@+id/temperatureImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/temperature"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridHorizontalNameOfPlanet"
+            android:contentDescription="@string/temperature" />
+
+        <ImageView
+            android:id="@+id/rotaionImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/rotation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temperatureImage"
+            android:contentDescription="@string/ratation" />
+
+        <ImageView
+            android:id="@+id/diameterImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/diameter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.474"
+            app:layout_constraintStart_toEndOf="@+id/rotaionImage"
+            app:layout_constraintTop_toBottomOf="@+id/gridHorizontalNameOfPlanet"
+            android:contentDescription="@string/diameter" />
+
+        <ImageView
+            android:id="@+id/distanceImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/distance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.474"
+            app:layout_constraintStart_toEndOf="@+id/rotaionImage"
+            app:layout_constraintTop_toBottomOf="@+id/diameterImage"
+            android:contentDescription="@string/distance" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

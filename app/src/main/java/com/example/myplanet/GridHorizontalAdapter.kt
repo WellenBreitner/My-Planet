@@ -17,6 +17,10 @@ class GridHorizontalAdapter(
         val textName: TextView = itemView.findViewById(R.id.gridHorizontalNameOfPlanet)
         val image: ImageView = itemView.findViewById(R.id.gridHorizontalImageOfPlanet)
         val cardView: CardView = itemView.findViewById(R.id.gridPlanetHorizontalCardView)
+        val temperature: ImageView = itemView.findViewById(R.id.temperatureImage)
+        val rotation: ImageView = itemView.findViewById(R.id.rotaionImage)
+        val diameter: ImageView = itemView.findViewById(R.id.diameterImage)
+        val distance: ImageView = itemView.findViewById(R.id.distanceImage)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GridViewHolder {
@@ -30,6 +34,10 @@ class GridHorizontalAdapter(
         val bindData = listPlanet[position]
         holder.textName.text = bindData.namePlanet
         holder.image.setImageResource(bindData.photoPlanet)
+        holder.temperature.setImageResource(bindData.temperaturePlanet)
+        holder.rotation.setImageResource(bindData.rotationPlanet)
+        holder.diameter.setImageResource(bindData.diameterPlanet)
+        holder.distance.setImageResource(bindData.distancePlanet)
 
         holder.cardView.startAnimation(
             AnimationUtils.loadAnimation(
