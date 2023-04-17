@@ -194,16 +194,16 @@ class PlanetRecyclerView : Fragment() {
         val getDistanceText = resources.getStringArray(R.array.Data_Distance_Planet_Text)
 
 
-
         val listPlanet = ArrayList<DataPlanet>()
         for (i in getName.indices) {
-            val planet = DataPlanet(getName[i],
+            val planet = DataPlanet(
+                getName[i],
                 getPhoto.getResourceId(i, -1),
                 getDescription[i],
-                getTemperatureImage.getResourceId(i,-1),
-                getRotaionImage.getResourceId(i,-1),
-                getDiameterImage.getResourceId(i,-1),
-                getDistanceImage.getResourceId(i,-1),
+                getTemperatureImage.getResourceId(i, -1),
+                getRotaionImage.getResourceId(i, -1),
+                getDiameterImage.getResourceId(i, -1),
+                getDistanceImage.getResourceId(i, -1),
                 getTemperatureText[i],
                 getRotationText[i],
                 getDiameterText[i],

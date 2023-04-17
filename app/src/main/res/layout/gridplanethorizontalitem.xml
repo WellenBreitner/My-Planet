@@ -109,7 +109,6 @@
             android:layout_width="0dp"
             android:layout_height="20dp"
             android:layout_marginStart="4dp"
-            app:layout_goneMarginEnd="8dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
             android:textSize="12sp"
@@ -117,6 +116,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/gridHorizontalDiameterImage"
             app:layout_constraintTop_toBottomOf="@+id/gridHorizontalNameOfPlanet"
+            app:layout_goneMarginEnd="8dp"
             tools:text="tesdfjisdi" />
 
         <ImageView
@@ -133,10 +133,10 @@
         <TextView
             android:id="@+id/gridHorizontalDistanceText"
             android:layout_width="0dp"
-            android:layout_marginEnd="8dp"
             android:layout_height="20dp"
             android:layout_marginStart="4dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
             android:textSize="12sp"
             app:layout_constraintEnd_toStartOf="@+id/gridHorizontalRotationImage"
             app:layout_constraintStart_toEndOf="@+id/gridHorizontalDistanceImage"
