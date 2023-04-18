@@ -18,8 +18,8 @@
             android:id="@+id/listImageOfPlanet"
             android:layout_width="240dp"
             android:layout_height="250dp"
-            android:layout_marginStart="200dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginStart="224dp"
+            android:layout_marginBottom="66dp"
             android:contentDescription="@string/image"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -29,32 +29,125 @@
             android:id="@+id/listNameOfPlanet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="24dp"
             android:fontFamily="serif-monospace"
             android:textColor="@color/black"
             android:textSize="35sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/listImageOfPlanet"
-            app:layout_constraintHorizontal_bias="0.262"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.078"
+            app:layout_constraintVertical_bias="0.071"
             tools:text="Mercury" />
 
         <TextView
             android:id="@+id/listDescOfPlanet"
             android:layout_width="0dp"
             android:layout_height="130dp"
+            android:layout_marginStart="24dp"
             android:ellipsize="end"
             android:lines="6"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/listImageOfPlanet"
             app:layout_constraintEnd_toStartOf="@+id/listImageOfPlanet"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/listNameOfPlanet"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/listNameOfPlanet"
             app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/listTemperatureImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/temperature"
+            android:src="@drawable/temperature"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listDescOfPlanet" />
+
+        <TextView
+            android:id="@+id/listTemperatureText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/listTemperatureImage"
+            app:layout_constraintTop_toBottomOf="@+id/listDescOfPlanet"
+            tools:text="tesdfjisdi" />
+
+        <ImageView
+            android:id="@+id/listDistanceImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/distance"
+            android:src="@drawable/distance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listTemperatureImage" />
+
+        <TextView
+            android:id="@+id/listDistanceText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/listDistanceImage"
+            app:layout_constraintTop_toBottomOf="@+id/listTemperatureText"
+            tools:text="tesdfjisdi" />
+
+        <ImageView
+            android:id="@+id/listDiameterImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="112dp"
+            android:contentDescription="@string/diameter"
+            android:src="@drawable/diameter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listImageOfPlanet" />
+
+        <TextView
+            android:id="@+id/listDiameterText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="110dp"
+            android:textSize="12sp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/listDiameterImage"
+            app:layout_constraintTop_toBottomOf="@+id/listImageOfPlanet"
+            app:layout_goneMarginEnd="8dp"
+            tools:text="tesdfjisdi" />
+
+        <ImageView
+            android:id="@+id/listRotationImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="112dp"
+            android:contentDescription="@string/ratation"
+            android:src="@drawable/rotation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listDiameterImage" />
+
+        <TextView
+            android:id="@+id/listRotationText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/listRotationImage"
+            app:layout_constraintTop_toBottomOf="@+id/listDiameterText"
+            tools:text="tesdfjisdi" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
