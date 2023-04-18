@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/gridPlanetVerticalCardView"
     android:layout_width="160dp"
-    android:layout_height="250dp"
+    android:layout_height="290dp"
     android:layout_gravity="bottom"
     android:layout_marginStart="10dp"
     android:layout_marginEnd="10dp"
@@ -21,7 +21,7 @@
             android:layout_width="200dp"
             android:layout_height="190dp"
             android:layout_marginStart="16dp"
-            android:layout_marginBottom="92dp"
+            android:layout_marginBottom="148dp"
             android:contentDescription="@string/image"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
             android:fontFamily="serif-monospace"
             android:textColor="@color/black"
             android:textSize="25sp"
@@ -42,6 +42,95 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/gridVerticalImageOfPlanet"
             tools:text="Mercury" />
+
+        <ImageView
+            android:id="@+id/gridVerticalTemperatureImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/temperature"
+            android:src="@drawable/temperature"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridVerticalNameOfPlanet" />
+
+        <TextView
+            android:id="@+id/gridVerticalTemperatureText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/gridVerticalTemperatureImage"
+            app:layout_constraintTop_toBottomOf="@+id/gridVerticalNameOfPlanet"
+            tools:text="tesdfjisdi" />
+
+        <ImageView
+            android:id="@+id/gridVerticalDistanceImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/distance"
+            android:src="@drawable/distance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridVerticalTemperatureImage" />
+
+        <TextView
+            android:id="@+id/gridVerticalDistanceText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/gridVerticalDistanceImage"
+            app:layout_constraintTop_toBottomOf="@+id/gridVerticalTemperatureText"
+            tools:text="tesdfjisdi" />
+
+        <ImageView
+            android:id="@+id/gridVerticalDiameterImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/diameter"
+            android:src="@drawable/diameter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridVerticalDistanceImage" />
+
+        <TextView
+            android:id="@+id/gridVerticalDiameterText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/gridVerticalDiameterImage"
+            app:layout_constraintTop_toBottomOf="@+id/gridVerticalDistanceText"
+            app:layout_goneMarginEnd="8dp"
+            tools:text="tesdfjisdi" />
+
+        <ImageView
+            android:id="@+id/gridVerticalRotationImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ratation"
+            android:src="@drawable/rotation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridVerticalDiameterImage" />
+
+        <TextView
+            android:id="@+id/gridVerticalRotationText"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/gridVerticalRotationImage"
+            app:layout_constraintTop_toBottomOf="@+id/gridVerticalDiameterText"
+            tools:text="tesdfjisdi" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

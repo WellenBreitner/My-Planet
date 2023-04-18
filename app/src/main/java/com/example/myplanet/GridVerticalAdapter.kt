@@ -17,6 +17,15 @@ class GridVerticalAdapter(
         val textName: TextView = itemView.findViewById(R.id.gridVerticalNameOfPlanet)
         val image: ImageView = itemView.findViewById(R.id.gridVerticalImageOfPlanet)
         val cardView: CardView = itemView.findViewById(R.id.gridPlanetVerticalCardView)
+        val temperature: ImageView = itemView.findViewById(R.id.gridVerticalTemperatureImage)
+        val rotation: ImageView = itemView.findViewById(R.id.gridVerticalRotationImage)
+        val diameter: ImageView = itemView.findViewById(R.id.gridVerticalDiameterImage)
+        val distance: ImageView = itemView.findViewById(R.id.gridVerticalDistanceImage)
+        val temperatureText: TextView = itemView.findViewById(R.id.gridVerticalTemperatureText)
+        val rotationText: TextView = itemView.findViewById(R.id.gridVerticalRotationText)
+        val diameterText: TextView = itemView.findViewById(R.id.gridVerticalDiameterText)
+        val distanceText: TextView = itemView.findViewById(R.id.gridVerticalDistanceText)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GridViewHolder {
@@ -30,6 +39,14 @@ class GridVerticalAdapter(
         val bindData = listPlanet[position]
         holder.textName.text = bindData.namePlanet
         holder.image.setImageResource(bindData.photoPlanet)
+        holder.temperature.setImageResource(bindData.temperaturePlanet)
+        holder.rotation.setImageResource(bindData.rotationPlanet)
+        holder.diameter.setImageResource(bindData.diameterPlanet)
+        holder.distance.setImageResource(bindData.distancePlanet)
+        holder.temperatureText.text = bindData.temperaturePlanetText
+        holder.rotationText.text = bindData.rotationPlanetText
+        holder.diameterText.text = bindData.diameterPlanetText
+        holder.distanceText.text = bindData.distancePlanetText
 
         holder.cardView.startAnimation(
             AnimationUtils.loadAnimation(
